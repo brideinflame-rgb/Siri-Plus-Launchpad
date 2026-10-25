@@ -2,7 +2,7 @@
 // @id              siri-plus-launchpad
 // @name            Siri Plus Launchpad
 // @description     Replaces the Start menu with a macOS 27 Siri-style launcher: search bar with categories, app tabs, files, clipboard, actions and live liquid glass
-// @version         1.43.1
+// @version         1.43.3
 // @author          Thiago Silva
 // @github          https://github.com/brideinflame-rgb
 // @homepage        https://github.com/brideinflame-rgb/Siri-Plus-Launchpad
@@ -104,9 +104,9 @@ All options are in the mod's **Settings** tab in Windhawk, with names in English
 | ② Theme | Clear glass, Light, Siri (macOS 27 gradient), Custom |
 | ③ Appearance | Glass transparency, corner rounding, background blur (0 = no blur) |
 | ④ Custom theme | Color, opacity, dark-to-light gradient, border width, color and opacity |
-| ⑤ Window and Fullscreen | Window size, search style (top bar or centered box), power button and its position, opening and closing animations (pop, fade, rise from/sink into the taskbar), animation speed, blur behind open folders |
-| ⑥ Floating and Original Siri | Bar size, results box width and rows, circle animation (Siri wave, soft glow, none), circle zoom, bounce of the circle and of the results box, opening/closing duration, animation speed, power options when typing, floating power button, first row (recent, most used, off) |
-| ⑦ Opening and shortcuts | Open with the Windows key and/or the Start button; category shortcuts for Applications, Files, Actions and Clipboard (defaults **Ctrl+1**, **Ctrl+2**, **Ctrl+3**, **Ctrl+4**; any combination starting with Ctrl, e.g. Ctrl+Shift+F or Ctrl+F2) |
+| ⑤ Window and Fullscreen | Window size, search style (top bar or centered box), power button and its position, opening and closing animations (pop, fade, rise from/sink into the taskbar, CRT), animation speed, blur behind open folders |
+| ⑥ Floating and Original Siri | Bar size, results box width and rows, circle animation (Siri wave, soft glow, none), circle zoom, bounce of the circle and of the results box, opening/closing duration, animation speed, power options when typing, floating power button, first row (recent, most used, off), Original Siri category shortcuts for Applications, Files, Actions and Clipboard (defaults **Ctrl+1**, **Ctrl+2**, **Ctrl+3**, **Ctrl+4**; any combination starting with Ctrl, e.g. Ctrl+Shift+F or Ctrl+F2) |
+| ⑦ Opening | Open with the Windows key and/or the Start button |
 | ⑧ Apps and icons | Icon size, columns, scrolling direction, jiggle, drag to the taskbar to pin |
 | ⑨ Files | On/off, search history, list or icons, indexer, maximum results |
 | ⑩ Clipboard | On/off, number of items kept |
@@ -119,7 +119,7 @@ All options are in the mod's **Settings** tab in Windhawk, with names in English
 |---|---|
 | **Win** / Start button | Open or close |
 | Type | Search (in Original Siri, typing right away searches Applications) |
-| **Ctrl+1 / 2 / 3 / 4** | Go to Applications / Files / Actions / Clipboard, in every mode (configurable) |
+| **Ctrl+1 / 2 / 3 / 4** | Original Siri: go to Applications / Files / Actions / Clipboard (configurable) |
 | **Tab / Shift+Tab** | Original Siri: next/previous app tab, or move through the results in Files, Clipboard and Actions |
 | Arrows + **Enter** | Move through results / open |
 | Other **Ctrl+digits** | Launch the matching result |
@@ -194,6 +194,13 @@ SOFTWARE.
 ```
 
 ## Changelog
+### 1.43.3
+- The category shortcuts belong to Original Siri: they moved to block ⑥ (Floating and Original Siri) and work only in that mode; block ⑦ is now just "Opening"
+### 1.43.2
+- Fixed: turning the Clipboard category off now really stops monitoring and clears the history
+- Fixed: Original Siri no longer creates hidden folders when an app is dropped on another (tabs replace folders there; dragging to the taskbar still pins)
+- Fixed: a possible crash when an app vanished while being drawn
+- Code cleanup: one power menu definition, unused variables removed, a lost press on the tab strip no longer blocks hovering
 ### 1.43.1
 - New README (everything the mod does and customizes, credits, support link)
 - License: GPL-3.0 (parts from Fullscreen Start keep their MIT notice)
@@ -541,6 +548,20 @@ SOFTWARE.
     - recent: Abertos ou instalados recentemente
     - used: Mais usados
     - off: Desligada
+  - shortcutApps: Ctrl+1
+    $name: "Original Siri: shortcut - Applications"
+    $name:pt-BR: "Siri original: atalho — Aplicativos"
+    $description: "With the launcher open, jumps to this category (shown next to it in the categories menu). Must start with Ctrl; empty = none. Examples - Ctrl+1, Ctrl+Shift+F, Ctrl+F2 (Ctrl+A/C/V/X stay for the text)"
+    $description:pt-BR: "Com o menu aberto, vai direto para esta categoria (aparece ao lado dela no menu de categorias). Deve começar com Ctrl; vazio = nenhum. Exemplos: Ctrl+1, Ctrl+Shift+F, Ctrl+F2 (Ctrl+A/C/V/X ficam para o texto)"
+  - shortcutFiles: Ctrl+2
+    $name: "Original Siri: shortcut - Files"
+    $name:pt-BR: "Siri original: atalho — Arquivos"
+  - shortcutActions: Ctrl+3
+    $name: "Original Siri: shortcut - Actions"
+    $name:pt-BR: "Siri original: atalho — Ações"
+  - shortcutClipboard: Ctrl+4
+    $name: "Original Siri: shortcut - Clipboard"
+    $name:pt-BR: "Siri original: atalho — Área de transferência"
   $name: "⑥ Floating and Original Siri modes"
   $name:pt-BR: "⑥ Modos Flutuante e Siri original"
 - open:
@@ -550,22 +571,8 @@ SOFTWARE.
   - startButton: true
     $name: Open with the Start button
     $name:pt-BR: "Abrir com o botão Iniciar"
-  - shortcutApps: Ctrl+1
-    $name: Shortcut - Applications
-    $name:pt-BR: "Atalho — Aplicativos"
-    $description: "With the launcher open, jumps to this category (shown next to it in the categories menu). Must start with Ctrl; empty = none. Examples - Ctrl+1, Ctrl+Shift+F, Ctrl+F2 (Ctrl+A/C/V/X stay for the text)"
-    $description:pt-BR: "Com o menu aberto, vai direto para esta categoria (aparece ao lado dela no menu de categorias). Deve começar com Ctrl; vazio = nenhum. Exemplos: Ctrl+1, Ctrl+Shift+F, Ctrl+F2 (Ctrl+A/C/V/X ficam para o texto)"
-  - shortcutFiles: Ctrl+2
-    $name: Shortcut - Files
-    $name:pt-BR: "Atalho — Arquivos"
-  - shortcutActions: Ctrl+3
-    $name: Shortcut - Actions (Original Siri)
-    $name:pt-BR: "Atalho — Ações (Siri original)"
-  - shortcutClipboard: Ctrl+4
-    $name: Shortcut - Clipboard
-    $name:pt-BR: "Atalho — Área de transferência"
-  $name: "⑦ Opening and shortcuts"
-  $name:pt-BR: "⑦ Abertura e atalhos"
+  $name: "⑦ Opening"
+  $name:pt-BR: "⑦ Abertura"
 - grid:
   - iconSize: 64
     $name: Icon size (px, Floating / Original Siri up to 56)
@@ -1106,14 +1113,12 @@ void LoadSettings() {
     g_startButtonEnabled = I(L"open.startButton") != 0;
     g_historyEnabled = I(L"files.history") != 0;
     g_filesList = S(L"files.view") == L"list";
-    g_shortcuts[0] = ParseShortcut(S(L"open.shortcutApps"), g_shortcutLabels[0]);
-    g_shortcuts[1] = ParseShortcut(S(L"open.shortcutFiles"), g_shortcutLabels[1]);
-    g_shortcuts[2] = ParseShortcut(S(L"open.shortcutClipboard"), g_shortcutLabels[2]);
-    g_shortcuts[3] = ParseShortcut(S(L"open.shortcutActions"), g_shortcutLabels[3]);
+    g_shortcuts[0] = ParseShortcut(S(L"siri.shortcutApps"), g_shortcutLabels[0]);
+    g_shortcuts[1] = ParseShortcut(S(L"siri.shortcutFiles"), g_shortcutLabels[1]);
+    g_shortcuts[2] = ParseShortcut(S(L"siri.shortcutClipboard"), g_shortcutLabels[2]);
+    g_shortcuts[3] = ParseShortcut(S(L"siri.shortcutActions"), g_shortcutLabels[3]);
     if (!g_historyEnabled) { g_searchHistory.clear(); SaveSearchHistory(); }
 }
-
-      
 
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -1290,7 +1295,7 @@ void DeleteQuerySelection() {
     size_t a = QuerySelStart(), b = QuerySelEnd();
     if (a < b && b <= g_query.size()) g_query.erase(a, b - a);
     g_queryCaret = g_queryAnchor = a;
-   
+
 }
 int g_openFolderIndex = -1;
 
@@ -1805,7 +1810,7 @@ void LoadSearchHistory() {
 }
 
 void AddSearchHistory(std::wstring q) {
-    if (!g_historyEnabled) return; 
+    if (!g_historyEnabled) return;
     q.erase(0, q.find_first_not_of(L' '));
     q.erase(q.find_last_not_of(L' ') + 1);
     if (q.size() < 2) return;
@@ -3265,7 +3270,7 @@ int ItemAt(int px, int py) {
 HANDLE g_frameWaitTimer;
 bool g_shown, g_closing; float g_appear; double g_lastFrame, g_lastClosed; bool g_frameTimer;
 int g_hover = -1, g_selected = -1, g_pressed = -1; bool g_pressedEmpty, g_trackingMouse;
-int g_longPressX = 0, g_longPressY = 0; bool g_longPressTriggered = false;
+bool g_longPressTriggered = false;
 float g_dragX = -1, g_dragY = -1; int g_dragItem = -1; bool g_isDragging = false;
 bool g_powerHover;
 bool g_clearHover;
@@ -3973,7 +3978,9 @@ void DrawMainGrid(const Layout& L, const std::vector<int>& items, float scroll, 
                 g_target->DrawText(f.name.c_str(), (UINT32)f.name.size(), g_labelFormat.Get(), c.label, g_brush.Get());
             }
         } else {
-            App& app = *ResolveApp(item);
+            App* resolved = ResolveApp(item);
+            if (!resolved) continue;
+            App& app = *resolved;
             D2D1::Matrix3x2F baseTransform;
             g_target->GetTransform(&baseTransform);
             bool jiggle = sel && (g_settings.jiggle || Picking());
@@ -4040,11 +4047,11 @@ void DrawMainGrid(const Layout& L, const std::vector<int>& items, float scroll, 
     // Original Siri: a thin line under the first row (recent / most used apps)
     if (interactive && g_settings.siriOriginal && g_siriTab == 0 && !L.list && g_firstRowCount > 0 &&
         (int)items.size() > g_firstRowCount && L.columns > 0) {
-        Cell first = CellAtIn(L, scroll, 0), last = CellAtIn(L, scroll, std::min(L.columns, g_firstRowCount) - 1);
-        float y = std::round(first.highlight.top + L.cellHeight - L.cellPad) + 0.5f;
+        Cell rowStart = CellAtIn(L, scroll, 0), rowEnd = CellAtIn(L, scroll, std::min(L.columns, g_firstRowCount) - 1);
+        float y = std::round(rowStart.highlight.top + L.cellHeight - L.cellPad) + 0.5f;
         D2D1_GRADIENT_STOP stops[3] = {{0.0f, Fg(0.0f)}, {0.5f, Fg(0.22f * alpha)}, {1.0f, Fg(0.0f)}};
-        if (auto line = MakeGradient(stops, 3, D2D1::Point2F(first.highlight.left, y), D2D1::Point2F(last.highlight.right, y)))
-            g_target->DrawLine(D2D1::Point2F(first.highlight.left + 6 * s, y), D2D1::Point2F(last.highlight.right - 6 * s, y), line.Get(), std::max(1.0f, s));
+        if (auto line = MakeGradient(stops, 3, D2D1::Point2F(rowStart.highlight.left, y), D2D1::Point2F(rowEnd.highlight.right, y)))
+            g_target->DrawLine(D2D1::Point2F(rowStart.highlight.left + 6 * s, y), D2D1::Point2F(rowEnd.highlight.right - 6 * s, y), line.Get(), std::max(1.0f, s));
     }
 
     g_target->PopAxisAlignedClip();
@@ -5509,6 +5516,7 @@ void OnFilesFound(FileResult* res) {
 }
 
 void OnClipboardUpdate() {
+    if (!g_settings.clipEnabled) return;   // off: nothing is monitored
     std::wstring text = ReadClipboardText(20000);
     if (text.find_first_not_of(L" \t\r\n") == std::wstring::npos) return;
     auto it = std::find(g_clipHistory.begin(), g_clipHistory.end(), text);
@@ -5666,8 +5674,8 @@ void OnKeyDown(WPARAM key) {
     const bool ctrlDown = (GetKeyState(VK_CONTROL) & 0x8000) != 0;
     const bool shiftDown = (GetKeyState(VK_SHIFT) & 0x8000) != 0;
     ClampQueryCaret();
-    if (ctrlDown && g_openFolderIndex < 0) {
-        // Category shortcuts (Ctrl+..., set in the mod's settings)
+    if (ctrlDown && g_openFolderIndex < 0 && g_settings.siriOriginal) {
+        // Original Siri category shortcuts (Ctrl+..., set in the mod's settings)
         for (int tab = 0; tab < 4; tab++) {
             const Shortcut& sc = g_shortcuts[tab];
             if (!sc.valid || sc.vk != (UINT)key || sc.shift != shiftDown) continue;
@@ -5899,8 +5907,8 @@ void EndDrag() {
         Render(); return;
     }
 
-    // Folders are supported in the Apps category, including Siri Apps results.
-    if (g_siriTab != 0) { g_dragItem = -1; return; }
+    // Folders are supported in the Apps category, including Floating Apps results (Original Siri uses tabs instead)
+    if (g_siriTab != 0 || g_settings.siriOriginal) { g_dragItem = -1; return; }
 
     if (g_openFolderIndex >= 0) {
         g_dragItem = -1;
@@ -6364,6 +6372,18 @@ void RunPowerChoice(int id) {
     DoPowerAction(id);
 }
 
+std::vector<MenuItem> PowerMenuItems() {
+    return {
+        {Tr(L"Lock"), kMenuLock},
+        {Tr(L"Sleep"), kMenuSleep},
+        {L"", 0, true},
+        {Tr(L"Restart"), kMenuRestart},
+        {Tr(L"Shut down"), kMenuShutdown, false, true},
+        {L"", 0, true},
+        {Tr(L"Sign out"), kMenuSignOut},
+    };
+}
+
 LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) {
     switch (msg) {
         case WM_APP_TOGGLE:
@@ -6374,7 +6394,8 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) {
         case WM_APP_RELOAD:
             LoadSettings();
             if (g_shown) HideNow();
-            if ((int)g_clipHistory.size() > g_settings.clipMax) g_clipHistory.resize(g_settings.clipMax);
+            if (!g_settings.clipEnabled) g_clipHistory.clear();   // off: the history is cleared
+            else if ((int)g_clipHistory.size() > g_settings.clipMax) g_clipHistory.resize(g_settings.clipMax);
             g_fileStatus.clear(); // Everything IPC needs no reload (no DLL)
             return 0;
         case WM_APP_QUIT: DestroyWindow(hwnd); return 0;
@@ -6446,7 +6467,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) {
                 const size_t nextCaret = QueryIndexAtPoint(g_layout, (float)x, (float)y);
                 if (nextCaret != g_queryCaret) {
                     g_queryCaret = nextCaret;
-                   
+
                     Render();
                 }
                 return 0;
@@ -6507,6 +6528,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) {
         case WM_LBUTTONDOWN: {
             if (g_closing) return 0;
             g_ignoreUp = false;
+            g_chipPress = false;   // a press whose release was lost (outside the window)
             int x = GET_X_LPARAM(lParam), y = GET_Y_LPARAM(lParam);
             if (g_menu.open && !g_menu.closing) {
                 if (!InRect(g_menu.rect, (float)x, (float)y)) {
@@ -6528,29 +6550,13 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) {
                 // Siri without the power pill: the menu opens outside the results box, on its right
                 g_menu.folder = g_menu.appIdx = g_menu.folderApp = -1;
                 float s = g_layout.scale, boxRight = g_layout.width / 2.0f + g_settings.siriPanelW * s / 2;
-                OpenMenu(std::max(boxRight, g_layout.btnPower.right) + 12 * s, g_layout.btnPower.top, {
-                    {Tr(L"Lock"), kMenuLock},
-                    {Tr(L"Sleep"), kMenuSleep},
-                    {L"", 0, true},
-                    {Tr(L"Restart"), kMenuRestart},
-                    {Tr(L"Shut down"), kMenuShutdown, false, true},
-                    {L"", 0, true},
-                    {Tr(L"Sign out"), kMenuSignOut},
-                });
+                OpenMenu(std::max(boxRight, g_layout.btnPower.right) + 12 * s, g_layout.btnPower.top, PowerMenuItems());
                 return 0;
             }
             if (g_openFolderIndex < 0 && PowerButtonOn() && InRect(g_layout.btnPower, (float)x, (float)y)) {
                 g_menu.folder = g_menu.appIdx = g_menu.folderApp = -1;
-                bool right = g_settings.siri || g_settings.powerRight;
-                OpenMenu(right ? g_layout.btnPower.right : g_layout.btnPower.left, g_layout.btnPower.bottom + 6 * g_layout.scale, {
-                    {Tr(L"Lock"), kMenuLock},
-                    {Tr(L"Sleep"), kMenuSleep},
-                    {L"", 0, true},
-                    {Tr(L"Restart"), kMenuRestart},
-                    {Tr(L"Shut down"), kMenuShutdown, false, true},
-                    {L"", 0, true},
-                    {Tr(L"Sign out"), kMenuSignOut},
-                }, right);
+                bool right = g_settings.powerRight;
+                OpenMenu(right ? g_layout.btnPower.right : g_layout.btnPower.left, g_layout.btnPower.bottom + 6 * g_layout.scale, PowerMenuItems(), right);
                 return 0;
             }
             int powerChoice = PowerChoiceAt((float)x, (float)y);
@@ -6619,7 +6625,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) {
             }
             if (FolderSettled()) { int dot = DotAt((float)x, (float)y); if (dot >= 0) { GoToPage(dot); return 0; } }
             SetCapture(hwnd); g_pressed = ItemAt(x, y); g_dragX = (float)x; g_dragY = (float)y;
-            g_longPressX = x; g_longPressY = y; g_longPressTriggered = false;
+            g_longPressTriggered = false;
             g_isDragging = false; g_swiping = false; g_swipeStartScroll = g_scrollTarget;
             g_pressedEmpty = g_pressed < 0 && !InRect(g_layout.search, (float)x, (float)y);
             if (g_settings.siri && g_pressed >= 0 && g_openFolderIndex < 0)
@@ -6967,7 +6973,7 @@ void Wh_ModUninit() {
     if (HWND wnd = g_wnd) PostMessageW(wnd, WM_APP_QUIT, 0, 0);
     WaitForSingleObject(g_thread, INFINITE);
     CloseHandle(g_thread); g_thread = nullptr; CloseHandle(g_readyEvent); g_readyEvent = nullptr;
-    
+
 }
 
 void Wh_ModSettingsChanged() { if (HWND wnd = g_wnd) PostMessageW(wnd, WM_APP_RELOAD, 0, 0); }
