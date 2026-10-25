@@ -1,152 +1,178 @@
-# MacOS Launchpad Plus
+# Siri Plus Launchpad
 
-A [Windhawk](https://windhawk.net/) mod that replaces the Windows Start menu with a floating app grid inspired by the macOS Launchpad. It includes folders, pages, search, custom icons and a power menu.
+A [Windhawk](https://windhawk.net) mod that replaces the Windows 11 Start menu with a macOS-inspired launcher: a Siri-style search bar with a categories menu, app tabs, file search, clipboard history, quick actions and live liquid-glass effects.
 
-![Screenshot](screenshot.png)
+Press the **Windows key** (or click **Start**) and type, or pick what you want to search from the menu that drops down from the bar.
 
-## Features
+---
 
-### Opening
-- Opens with the **Windows key** and/or the **Start button** (each can be turned on or off)
-- **Window** or **fullscreen** mode. Fullscreen respects the work area and the space reserved by [Standalone Dock](https://windhawk.net/)
-- Opening and closing animations: **Pop**, **Fade**, **Slide** (rise from / sink into the taskbar) and **CRT**, with adjustable speed
+## Highlights
 
-### Search
-- Shown as a **top bar** or a **centered macOS-style box**
-- Also finds **apps inside folders**
-- Just start typing. Supports Backspace, Ctrl+Backspace (delete a word) and Ctrl+V (paste)
+- **Four modes**: Original Siri (default), Floating, Window and Fullscreen
+- **Live liquid glass**: real-time blur behind the bar and panels (animated wallpapers and videos keep playing underneath)
+- **One search for everything**: Apps, Files, Clipboard and Actions
+- **App tabs**: All, automatic categories and up to 6 tabs of your own
+- **Recent apps row**: recently opened or installed apps (or the most used ones) on top
+- **Power options**: type *shut down*, *restart*, *sleep*, *lock* or *sign out*, or use the floating power button
+- **Custom icons**: give any app your own icon (PNG, JPG, ICO, WebP...)
+- **Themes**: Clear glass, Light, Siri (macOS 27 gradient) and a fully Custom theme
+- **Your language**: the interface follows the Windows display language (English, Portuguese, Spanish, French, German and Italian)
 
-### Navigation
-- **Vertical scrolling** or **horizontal pages**
-- Page indicators (clickable dots), mouse wheel, horizontal wheel and **swipe**
-- Dragging an icon to the edge of the screen flips to the next or previous page
-- Full keyboard navigation
+---
 
-### Folders
-- Saved between sessions, with open and close animations
-- Create a folder by **dragging an app onto another app**, or from the context menu
-- **Drag apps into folders**; drag an app **out of an open folder** to remove it
-- **Rename** a folder by clicking its title, and **Undo folder** to ungroup its apps
-- Blur behind the open folder
-- Apps you uninstall are removed from folders automatically
+## Modes
 
-### Selection
-- **Multi-select** with Ctrl+click or the context menu
-- Select all, clear the selection, and drag several apps at once (a counter badge shows how many)
-- Create a folder from the selected apps
+### Original Siri (default)
+A search bar in the macOS 27 style.
 
-### Taskbar
-- **Pin to taskbar** from the context menu or by **dragging an icon onto the taskbar** (also works with the Standalone Dock)
-- Pin several selected apps at once
+- **Categories menu**: hover over the bar (or click it) and a menu drops down with **Applications**, **Files**, **Actions** and **Clipboard**, each with its icon and its keyboard shortcut (default **Ctrl+1 … Ctrl+4**, configurable).
+- Picking a category makes its icon and name glide from the menu into the bar, and the search then works inside that category. If you type straight away, you go to Applications.
+- **Going back**:
+  - Hover the category icon in the bar and it turns into a back arrow. Click it, or press **Esc**, to return to "Search" with the magnifier.
+  - Click the empty text next to the icon to reopen the categories menu and switch directly.
+- **App tabs**:
+  - **All** comes first and shows every app.
+  - Then the automatic categories: Utilities, Productivity, Entertainment, Social, Creativity, Reading and Other.
+  - Then up to **6 tabs of your own**, for example "Games".
+- **First row**: recently opened or installed apps, or the most used ones (configurable), separated from the rest by a thin line.
+- **Actions**: Lock, Sleep, Restart, Shut down, Sign out, Settings, Task Manager, File Explorer, Control Panel, Screenshot and Empty Recycle Bin.
 
-### Custom icons
-- Set a custom icon for any app: **PNG, JPG, JPEG, BMP, ICO, GIF, WebP**
-- Custom icons are saved and can be reset at any time
+### Floating
+The bar appears out of an animated circle, the **Siri wave** or a soft glow, with zoom and an adjustable bounce. Clicking it or typing slides the results panel down. When it closes, the bar is "sucked" back into the bubble.
 
-### Power menu
-- Optional power button **left or right** of the search bar
-- **Lock, Sleep, Restart, Shut down, Sign out**
+### Window and Fullscreen
+The classic Launchpad grid with pages or vertical scrolling, folders and a power button. Fullscreen respects the work area and the space reserved by docks.
 
-### Appearance
-- **Blur Mode**: Adjustable (blurred snapshot of the desktop) or None
-- Background color and opacity
-- Border width, color and opacity
-- Rounded corners for the window and for the open folder
-- Icon size and number of columns
+---
+
+## Managing app tabs (Original Siri)
+
+| What | How |
+|---|---|
+| Create a tab | Right-click an app → **New tab with this app**, or right-click the tab strip / an empty area → **New tab**. Type the name and press **Enter** |
+| Add apps | Inside a tab, right-click → **Add app**. A picker shows every app: **long-press** to select as many as you want (selected apps jiggle), then **Done** |
+| Remove an app | Inside a tab, right-click the app → **Remove from tab** |
+| Rename or delete | Right-click the tab → **Rename tab** / **Delete tab** |
+| Built-in tabs | They can also be edited (add or remove apps) and deleted. **Restore default tabs** brings them back |
+| Move through tabs | **Tab / Shift+Tab**, or click and drag the strip sideways (the mouse wheel works too) |
+
+---
+
+## Files
+- **Indexer**: Everything (through IPC, no DLL needed), Windows Search or a direct scan. The default, Automatic, uses the first one that is available.
+- When the search is empty, your **recent searches** are shown, with a button to clear them. History can be turned off.
+- Results show the **folder** of each file under its name, in a list or as icons.
+- The maximum number of results is configurable.
+
+## Clipboard
+- Keeps the texts you copy while the mod runs. The number of items is configurable.
+- Shown as a **list**: the first line of each text, with a preview of the rest (or its size) underneath.
+- Click an item to copy it again. Turning the category off also stops monitoring and clears the history.
+
+## Apps and icons
+- **Search** apps by typing.
+- **Folders** (Window/Fullscreen): drag apps together, rename, undo.
+- **Multi-select** with jiggling icons, **pin to taskbar** (also by dragging an icon to the taskbar), **uninstall**.
+- **Custom icons**: right-click an app → **Change icon...** and pick an image (PNG, JPG, JPEG, BMP, ICO, GIF or WebP). The new icon is remembered across restarts; **Reset icon** brings back the original. Works in every mode, including apps inside folders.
+- Icon size, number of columns and the scrolling direction are configurable.
+
+---
+
+## Customization
+
+All options are in the mod's **Settings** tab in Windhawk, with names in English and Portuguese.
+
+| Block | Options |
+|---|---|
+| ① Mode | Original Siri (default), Floating, Window, Fullscreen |
+| ② Theme | Clear glass, Light, Siri (macOS 27 gradient), Custom |
+| ③ Appearance | Glass transparency, corner rounding, background blur (0 = no blur) |
+| ④ Custom theme | Color, opacity, dark-to-light gradient, border width, color and opacity |
+| ⑤ Window and Fullscreen | Window size, search style (top bar or centered box), power button and its position, opening and closing animations (pop, fade, rise from/sink into the taskbar), animation speed, blur behind open folders |
+| ⑥ Floating and Original Siri | Bar size, results box width and rows, circle animation (Siri wave, soft glow, none), circle zoom, bounce of the circle and of the results box, opening/closing duration, animation speed, power options when typing, floating power button, first row (recent, most used, off) |
+| ⑦ Opening and shortcuts | Open with the Windows key and/or the Start button; category shortcuts for Applications, Files, Actions and Clipboard (defaults **Ctrl+1**, **Ctrl+2**, **Ctrl+3**, **Ctrl+4**; any combination starting with Ctrl, e.g. Ctrl+Shift+F or Ctrl+F2) |
+| ⑧ Apps and icons | Icon size, columns, scrolling direction, jiggle, drag to the taskbar to pin |
+| ⑨ Files | On/off, search history, list or icons, indexer, maximum results |
+| ⑩ Clipboard | On/off, number of items kept |
+
+---
+
+## Keyboard and mouse
+
+| Key / action | What it does |
+|---|---|
+| **Win** / Start button | Open or close |
+| Type | Search (in Original Siri, typing right away searches Applications) |
+| **Ctrl+1 / 2 / 3 / 4** | Go to Applications / Files / Actions / Clipboard, in every mode (configurable) |
+| **Tab / Shift+Tab** | Original Siri: next/previous app tab, or move through the results in Files, Clipboard and Actions |
+| Arrows + **Enter** | Move through results / open |
+| Other **Ctrl+digits** | Launch the matching result |
+| **Esc** | Closes menus, then clears the search, goes back to the categories and finally closes |
+| Right-click on the search bar | Cut, Copy, Paste, Select all, Delete all |
+| Long-press an app | Select it (in Original Siri, inside the app picker) |
+
+---
+
+## Requirements
+- Windows 11 (x64)
+- [Windhawk](https://windhawk.net)
+- Live blur needs **Transparency effects** turned on in Windows (*Settings → Personalization → Colors*). Without it, a blurred still image is used.
+- Optional: [Everything](https://www.voidtools.com) for instant file search (run it normally, not as administrator)
 
 ## Installation
+1. Install [Windhawk](https://windhawk.net).
+2. Search for **Siri Plus Launchpad** in Windhawk's mod browser and click **Install**.
+   Or click **Create a new mod**, paste the contents of `siri-plus-launchpad.wh.cpp` from this repository, then **Compile** and **Enable**.
+3. Press the Windows key.
 
-1. Install [Windhawk](https://windhawk.net/).
-2. Open Windhawk and click **Create a new mod**.
-3. Replace the code with the contents of [`macos-launchpad-plus.wh.cpp`](macos-launchpad-plus.wh.cpp).
-4. Click **Compile Mod**, then **Enable**.
+---
 
-## Controls
+## Support the project
+If you enjoy Siri Plus Launchpad, you can support its development with a Pix donation:
 
-| Action | Shortcut |
-|---|---|
-| Search | Start typing |
-| Delete character / word | `Backspace` / `Ctrl+Backspace` |
-| Paste | `Ctrl+V` |
-| Navigate / launch | Arrow keys + `Enter` |
-| Scroll / change page | `Page Up` / `Page Down`, mouse wheel, swipe |
-| Multi-select | `Ctrl+click` |
-| Back / close | `Esc` (closes the menu, then the selection, the search, the open folder and finally the Launchpad) |
+[![Donate with LivePix](https://img.shields.io/badge/Donate-LivePix-00C2A8?style=for-the-badge)](https://livepix.gg/kurokobr)
 
-- Clicking empty space clears the selection, or closes the Launchpad if nothing is selected
-- Clicking outside an open folder closes the folder
-- The Launchpad closes when it loses focus
-
-## Context menus
-
-| Right-click on | Options |
-|---|---|
-| **App** | Select/Deselect, New folder with this app (or with the selection), Pin to taskbar, Change icon, Reset icon |
-| **App found inside a folder (search)** | Pin to taskbar, Change icon, Reset icon |
-| **Folder** | Rename, Undo folder |
-| **Empty space** | New folder, Select all, Clear selection |
-| **Inside an open folder** | Change/Reset icon of the app, Rename, Undo folder |
-
-## Settings
-
-| Setting | Default | Options / Range |
-|---|---|---|
-| Blur Mode | Adjustable | Adjustable, None |
-| Blur strength | 60 | 0–100 (Adjustable mode only) |
-| Background opacity | 60% | 0–100 |
-| Background color | `#1e1e1e` | Hex color |
-| Display mode | Window | Window, Fullscreen |
-| Window width | 80% | 30–100 (window mode only) |
-| Window height | 75% | 30–100 (window mode only) |
-| Search style | Top bar | Top bar, Centered box (macOS) |
-| Window corner radius | 28 px | 0–60 |
-| Open folder corner radius | 26 px | 0–60 |
-| Folder blur | 40 | 0–100 |
-| Animation speed | 100% | 25–400 |
-| Border width | 1 px | 0–8 (0 = none) |
-| Border color | `#ffffff` | Hex color |
-| Border opacity | 18% | 0–100 |
-| Icon size | 64 px | 24–192 |
-| Columns | 0 (auto) | 0–30 |
-| Page navigation | Vertical | Vertical (scroll), Horizontal (pages) |
-| Drag icon to taskbar to pin | On | On / Off |
-| Opening animation | Pop in | Pop in, Fade, Rise from taskbar, CRT |
-| Closing animation | Pop out | Pop out, Fade, Sink into taskbar, CRT |
-| Open with Windows key | On | On / Off |
-| Open with Start button | On | On / Off |
-| Show power button | On | On / Off |
-| Power button position | Left | Left, Right of the search bar |
-
-## Notes and limitations
-
-- The blur is a static snapshot taken when the Launchpad opens
-- Search is case-insensitive substring matching. Accents are not ignored, and results are sorted alphabetically
-- Apps found inside folders through search can be launched, pinned and given a new icon, but not selected or regrouped
-- Power actions run without confirmation
-- Pinning uses the shell `taskbarpin` verb and may fail silently if Windows doesn't offer it for an app
-- Changing settings closes the Launchpad if it is open
-
-## Changelog
-
-### 1.2.0
-- Search now includes apps inside folders
-- "Blur type" renamed to "Blur Mode"; only Adjustable and None remain (Acrylic and Windows blur removed)
-- Fixed credits (original mod: Fullscreen Start (Launchpad style))
-
-### 1.1.0
-- New setting: power button position (left or right of the search bar)
-
-### 1.0.0
-- First release, based on Rafael Mendes' Fullscreen Start (Launchpad style)
-- Custom icons per app
-- Optional power menu button
+---
 
 ## Credits
+Originally based on the **Fullscreen Start (Launchpad style)** mod (`fullscreen-start`, MIT License) by **Rafael Mendes** ([github.com/RafaelMendes1407](https://github.com/RafaelMendes1407)). The project has since been largely rewritten and extended.
 
-Based on the original **Fullscreen Start (Launchpad style)** mod (`fullscreen-start`) by **Rafael Mendes** ([@RafaelMendes1407](https://github.com/RafaelMendes1407)). All credit for the original concept and implementation goes to him.
+Parts that still come from (or are adapted from) his code:
+- **App list and icons**: enumerating the "All apps" list (programs and Store apps), loading each app's icon and trimming/centering it, skipping non-app entries, loading them on a background thread
+- **Standalone Dock integration**: respecting the space the Dock reserves and keeping the Dock above the launcher
+- **Fallback blur**: capturing the screen behind the launcher and blurring it (used when Windows' transparency effects are off)
+- **Drawing base**: the layered window drawn with Direct2D (surface, render target and icon bitmaps)
+- **Start menu interception**: the hook that opens the launcher instead of the Windows Start menu
+- **Small helpers**: text lowercasing, name sorting, color parsing, timing
 
-Maintained by **Thiago Silva** ([@brideinflame-rgb](https://github.com/brideinflame-rgb)).
+Everything else (Original Siri and Floating modes, live liquid glass, themes, app tabs, folders, Files, Clipboard, Actions, menus, animations, power options, shortcuts and translations) was written for this project.
+
+Developed and maintained by **Thiago Silva** ([github.com/brideinflame-rgb](https://github.com/brideinflame-rgb)).
 
 ## License
+Copyright (c) 2026 Thiago Silva. Licensed under the **GNU General Public License v3.0** (see `LICENSE`).
 
-[MIT](LICENSE)
+The parts that come from Rafael Mendes' *Fullscreen Start* are also available under their original license:
+
+```
+MIT License
+Copyright (c) Rafael Mendes
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
