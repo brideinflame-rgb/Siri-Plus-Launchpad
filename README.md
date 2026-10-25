@@ -88,9 +88,9 @@ All options are in the mod's **Settings** tab in Windhawk, with names in English
 | ② Theme | Clear glass, Light, Siri (macOS 27 gradient), Custom |
 | ③ Appearance | Glass transparency, corner rounding, background blur (0 = no blur) |
 | ④ Custom theme | Color, opacity, dark-to-light gradient, border width, color and opacity |
-| ⑤ Window and Fullscreen | Window size, search style (top bar or centered box), power button and its position, opening and closing animations (pop, fade, rise from/sink into the taskbar), animation speed, blur behind open folders |
-| ⑥ Floating and Original Siri | Bar size, results box width and rows, circle animation (Siri wave, soft glow, none), circle zoom, bounce of the circle and of the results box, opening/closing duration, animation speed, power options when typing, floating power button, first row (recent, most used, off) |
-| ⑦ Opening and shortcuts | Open with the Windows key and/or the Start button; category shortcuts for Applications, Files, Actions and Clipboard (defaults **Ctrl+1**, **Ctrl+2**, **Ctrl+3**, **Ctrl+4**; any combination starting with Ctrl, e.g. Ctrl+Shift+F or Ctrl+F2) |
+| ⑤ Window and Fullscreen | Window size, search style (top bar or centered box), power button and its position, opening and closing animations (pop, fade, rise from/sink into the taskbar, CRT), animation speed, blur behind open folders |
+| ⑥ Floating and Original Siri | Bar size, results box width and rows, circle animation (Siri wave, soft glow, none), circle zoom, bounce of the circle and of the results box, opening/closing duration, animation speed, power options when typing, floating power button, first row (recent, most used, off), Original Siri category shortcuts for Applications, Files, Actions and Clipboard (defaults **Ctrl+1**, **Ctrl+2**, **Ctrl+3**, **Ctrl+4**; any combination starting with Ctrl, e.g. Ctrl+Shift+F or Ctrl+F2) |
+| ⑦ Opening | Open with the Windows key and/or the Start button |
 | ⑧ Apps and icons | Icon size, columns, scrolling direction, jiggle, drag to the taskbar to pin |
 | ⑨ Files | On/off, search history, list or icons, indexer, maximum results |
 | ⑩ Clipboard | On/off, number of items kept |
@@ -103,7 +103,7 @@ All options are in the mod's **Settings** tab in Windhawk, with names in English
 |---|---|
 | **Win** / Start button | Open or close |
 | Type | Search (in Original Siri, typing right away searches Applications) |
-| **Ctrl+1 / 2 / 3 / 4** | Go to Applications / Files / Actions / Clipboard, in every mode (configurable) |
+| **Ctrl+1 / 2 / 3 / 4** | Original Siri: go to Applications / Files / Actions / Clipboard (configurable) |
 | **Tab / Shift+Tab** | Original Siri: next/previous app tab, or move through the results in Files, Clipboard and Actions |
 | Arrows + **Enter** | Move through results / open |
 | Other **Ctrl+digits** | Launch the matching result |
