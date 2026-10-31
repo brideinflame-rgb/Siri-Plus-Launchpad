@@ -16,8 +16,8 @@ Press the **Windows key** (or click **Start**) and type, or pick what you want t
 - **App tabs**: All, automatic categories and up to 6 tabs of your own
 - **Recent apps row**: recently opened or installed apps (or the most used ones) on top
 - **Power options**: type *shut down*, *restart*, *sleep*, *lock* or *sign out*, or use the floating power button
-- **Keyboard shortcuts**: Ctrl+1 … Ctrl+4 jump to Applications, Files, Actions and Clipboard, also with the launcher closed (configurable)
-- **Custom icons**: give any app your own icon (PNG, JPG, ICO, WebP...), or pick one from a **GitHub repository** of icons, with search and a color filter
+- **Keyboard shortcuts**: Ctrl+1 … Ctrl+4 jump to Applications, Files, Actions and Clipboard, and can also open the launcher from any program (optional)
+- **Custom icons**: give any app your own icon (PNG, JPG, ICO, WebP...), or pick one from an **icon gallery** (any folder of icons, such as a downloaded icon pack), with search and a color filter
 - **Themes**: Clear glass, Light, Dark, OLED (deep black), Siri (macOS 27 gradient) and a fully Custom theme, with an optional glass effect on Light, Dark and OLED
 - **Settings panel**: the **⋯** button at the end of the bar opens every setting in a macOS-style panel, applied live
 - **Move the bar**: hold the Siri bar and drag it anywhere, on any monitor
@@ -125,14 +125,14 @@ The classic Launchpad grid with pages or vertical scrolling, folders and a power
 - **Folders** (Window and Fullscreen): drag apps together, rename, undo. The Siri modes list the apps of every folder together.
 - **Multi-select** with jiggling icons, **pin to taskbar** (also by dragging an icon to the taskbar), **uninstall**.
 - **Custom icons**: right-click an app → **Change icon...** and pick an image (PNG, JPG, JPEG, BMP, ICO, GIF or WebP). The new icon is remembered across restarts; **Reset icon** brings back the original. Works in every mode, including apps inside folders.
-- **Icons from GitHub**: set a repository in the settings (`owner/repository`, or a link to it or to a folder in it), then right-click an app → **Icon from GitHub...** The repository's images show in the grid; type to search them by name, or use the color dots to see only one color or put them in rainbow order. Pictures added or replaced in the repository show up the next time the gallery opens. After picking, the launcher goes back to where it was, with that app selected.
+- **Icon gallery**: choose a folder of icon images in the settings (*Apps and icons → Icon gallery folder*, typed or picked with **Choose…**), for example a downloaded icon pack. Then right-click an app → **Icon from gallery...** The folder's images (subfolders included) show in the grid; type to search them by name, or use the color dots to see only one color or put them in rainbow order. Images added to the folder show up the next time the gallery opens. After picking, the launcher goes back to where it was, with that app selected.
 - Icon size, number of columns and the scrolling direction are configurable.
 
 ## Settings panel
 - Click the **⋯** button at the end of the bar (every mode). The bar moves to the left and becomes a list of sections, and a panel with the settings comes out of the button. Every change applies at once.
 - Changes made there are kept on top of Windhawk's settings, and a change made later in Windhawk wins again.
 - **Theme defaults** (Appearance) brings back the chosen theme's own look. **Restore all defaults** (General) puts every setting back to how the mod comes and the bar back in the center; folders, tabs and custom icons stay.
-- **Back up** saves everything to a `.siribackup` file: every setting (the GitHub repository too), folders, tabs, search history, the bar's place and the custom icons, with their pictures inside the file. **Restore a backup** brings it all back, also after uninstalling the mod (which erases its stored data) or on another PC.
+- **Back up** saves everything to a `.siribackup` file: every setting (the icon gallery folder too), folders, tabs, search history, the bar's place and the custom icons, with their pictures inside the file. **Restore a backup** brings it all back, also after uninstalling the mod (which erases its stored data) or on another PC.
 - In Window and Fullscreen the window folds into its search field while the settings are open. With the bar low on the screen, the settings open upward.
 
 ## Moving the bar (Floating and Original Siri)
@@ -153,9 +153,9 @@ All options are in the **⋯** settings panel (in six languages) and in the mod'
 | ③ Appearance | Theme defaults button, glass transparency (each theme keeps its own; Light and OLED start solid), corner rounding, background blur (0 = no blur), blur behind right-click menus, text color (automatic: on clear glass, black over light backgrounds; or white or black), clear glass style (frosted, or experimental liquid for Floating and Original Siri, with its refraction strength and an optional live mode), glass effect on Light/Dark/OLED |
 | ④ Custom theme | Color, opacity, dark-to-light gradient, border width, color and opacity |
 | ⑤ Window and Fullscreen | Window size, search style (top bar or centered box), power button and its position, opening and closing animations (pop, fade, rise from/sink into the taskbar, CRT), animation speed, blur behind open folders |
-| ⑥ Floating and Original Siri | Bar size, results box width and rows for each category (Files and Clipboard as wide as the bar by default), circle animation (Siri wave, soft glow, none), circle zoom, bounce of the circle and of the results box, opening/closing duration, animation speed, power options when typing, floating power button, first row (recent, most used, off), Original Siri category shortcuts for Applications, Files, Actions and Clipboard (defaults **Ctrl+1**, **Ctrl+2**, **Ctrl+3**, **Ctrl+4**; any combination starting with Ctrl, e.g. Ctrl+Shift+F or Ctrl+F2), and whether they also work with the launcher closed |
+| ⑥ Floating and Original Siri | Bar size, results box width and rows for each category (Files and Clipboard as wide as the bar by default), circle animation (Siri wave, soft glow, none), circle zoom, bounce of the circle and of the results box, opening/closing duration, animation speed, power options when typing, floating power button, first row (recent, most used, off), Original Siri category shortcuts for Applications, Files, Actions and Clipboard (defaults **Ctrl+1**, **Ctrl+2**, **Ctrl+3**, **Ctrl+4**; any combination starting with Ctrl, e.g. Ctrl+Shift+F or Ctrl+F2), and whether they also work with the launcher closed (off by default) |
 | ⑦ Opening | Open with the Windows key and/or the Start button |
-| ⑧ Apps and icons | Icon size, columns, scrolling direction, jiggle, drag to the taskbar to pin, GitHub icon repository |
+| ⑧ Apps and icons | Icon size, columns, scrolling direction, jiggle, drag to the taskbar to pin, icon gallery folder |
 | ⑨ Files | On/off, search history, list or icons, indexer, maximum results |
 | ⑩ Clipboard | On/off, number of items kept, how long a copy stays |
 
@@ -167,7 +167,7 @@ All options are in the **⋯** settings panel (in six languages) and in the mod'
 |---|---|
 | **Win** / Start button | Open or close |
 | Type | Search (in Original Siri, typing right away searches Applications) |
-| **Ctrl+1 / 2 / 3 / 4** | Original Siri: go to Applications / Files / Actions / Clipboard (configurable). By default they also open the launcher from any program; turn that off if you need these keys elsewhere (e.g. browser tabs) |
+| **Ctrl+1 / 2 / 3 / 4** | Original Siri: go to Applications / Files / Actions / Clipboard (configurable). With *Also with the launcher closed* on (off by default) they open the launcher from any program, and other programs no longer get those keys |
 | **Tab / Shift+Tab** | Original Siri: next/previous app tab, or move through the results in Files, Clipboard and Actions |
 | Arrows + **Enter** | Move through results / open |
 | Other **Ctrl+digits** | Launch the matching result (never an action such as Shut down) |
@@ -183,13 +183,13 @@ All options are in the **⋯** settings panel (in six languages) and in the mod'
 - Live blur needs **Transparency effects** turned on in Windows (*Settings → Personalization → Colors*). Without it, a blurred still image is used.
 - Optional: [Everything](https://www.voidtools.com) for instant file search (run it normally, not as administrator)
 
-## Privacy, network and files
-- **Network**: the mod only goes online for **Icons from GitHub**, and only after you set a repository: it reads the repository's file list from `api.github.com` and downloads images from `raw.githubusercontent.com`. Nothing about you or your PC is sent.
-- **Files it writes**: downloaded GitHub images (and the colors found for them) are cached in `%LOCALAPPDATA%\SiriPlusLaunchpad\GitHubIcons`; icons restored from a backup go to `%LOCALAPPDATA%\SiriPlusLaunchpad\Icons`. These folders stay after uninstalling and can be deleted by hand. Backups are written only where you choose.
+## Privacy and files
+- The mod never goes online.
+- Its own files (icons restored from a backup, the colors found for the gallery's images) are kept in the mod's storage folder, which Windhawk removes together with the mod. The gallery's images are only read from the folder you choose; backups are written only where you choose.
 - The clipboard history lives in memory only and is never written to disk.
 
 ## Compatibility
-- **Ctrl+1 … Ctrl+4 everywhere** (on by default): while this is on, other programs no longer get these keys (for example, the browser's Ctrl+1 for the first tab). Turn it off in *Shortcuts*, or pick other combinations.
+- **Category shortcuts from any program** (off by default): when *Shortcuts → Also with the launcher closed* is on, Ctrl+1 … Ctrl+4 are registered as system hotkeys, so other programs no longer get them (for example, the browser's Ctrl+1 for the first tab). Leave it off, or pick other combinations, if you need those keys elsewhere.
 - **Fullscreen Start** (`fullscreen-start`): don't enable both. Each one replaces the Start menu through the same hook without calling the original, so only one of them would get the Windows key.
 - **Spotlight Launcher**: it adds a separate search bar on Alt+Space and leaves the Start menu alone. This mod replaces the Start menu itself (Windows key and Start button) and adds app tabs, folders, files, clipboard history and actions. Both can be used together.
 
