@@ -1,5 +1,7 @@
 # Siri Plus Launchpad
 
+**English** | [Português](README.pt-BR.md)
+
 A [Windhawk](https://windhawk.net) mod that replaces the Windows 11 Start menu with a macOS-inspired launcher: a Siri-style search bar with a categories menu, app tabs, file search, clipboard history, quick actions and live glass effects.
 
 Press the **Windows key** (or click **Start**) and type, or pick what you want to search from the menu that drops down from the bar.
@@ -23,7 +25,7 @@ Press the **Windows key** (or click **Start**) and type, or pick what you want t
 - **Settings panel**: the **⋯** button at the end of the bar opens every setting in a macOS-style panel, applied live
 - **Move the bar**: hold the Siri bar and drag it anywhere, on any monitor
 - **Backup**: save settings, folders, tabs and custom icons to one file and restore them, even after reinstalling
-- **Your language**: follows the Windows display language, or pick one (English, Portuguese, Spanish, French, German and Italian)
+- **Your language**: follows the Windows display language, or pick one (English, Portuguese, Spanish, French, German, Italian and Simplified Chinese)
 
 ---
 
@@ -79,7 +81,7 @@ A search bar in the macOS 27 style.
 
 - **Categories menu**: hover over the bar (or click it) and a menu drops down with **Applications**, **Files**, **Actions** and **Clipboard**, each with its icon and its keyboard shortcut (default **Ctrl+1 … Ctrl+4**, configurable).
 - **Search everything**: type straight away in "Search" and one list shows **Applications**, **Actions**, **Folders** and **Documents and files** together, each under its title (the best matches and the most used apps first). Apps show up at once; folders and files come in a moment later, below them, so nothing you are about to click moves. **Show all** next to a title opens that category with what you typed; **Enter** opens the first result. The clipboard is never part of it. Erasing the text brings back the plain "Search" bar. It can be turned off (*Siri bar → Typing in Search looks everywhere*): then typing goes to Applications.
-- **Calculator**: type a calculation such as *2+2*, *15% * 80* or *(3+4)^2* and its result shows first, in a list; **Enter** copies it. It can be turned off (*Search → Calculator*).
+- **Calculator**: type a calculation such as *2+2*, *15% * 80* or *(3+4)^2* and its result shows first, in a list; **Enter** copies it. Dates and phone numbers such as *2024-11-04* or *555-1234* are left alone (type *5 - 3* with spaces, or start with **=** or **calc**, as in *=5-3*, to always calculate), and the decimal mark follows Windows' region settings. It can be turned off (*Search → Calculator*).
 - Picking a category makes its icon and name glide from the menu into the bar, and the search then works only inside that category.
 - **Going back**: hover the category icon in the bar and it turns into a back arrow. Click it, or press **Esc**, to return to "Search" with the magnifier and pick another category.
 - **App tabs**:
@@ -146,13 +148,13 @@ The classic Launchpad grid with pages or vertical scrolling, folders and a power
 
 ## Customization
 
-All options are in the **⋯** settings panel (in six languages) and in the mod's **Settings** tab in Windhawk (English and Portuguese).
+All options are in the **⋯** settings panel (in seven languages) and in the mod's **Settings** tab in Windhawk (English and Portuguese).
 
 | Block | Options |
 |---|---|
 | ① Mode | Original Siri (default), Floating, Window, Fullscreen |
 | ② Theme | Clear glass, Light, Dark, OLED, Siri (macOS 27 gradient), Custom |
-| Language | Automatic (Windows) or English, Português, Español, Français, Deutsch, Italiano |
+| Language | Automatic (Windows) or English, Português, Español, Français, Deutsch, Italiano, 中文（简体） |
 | Performance | **Light (faster)** turns off liquid glass, the blur behind menus and the shadows and keeps it to 60 frames per second, for laptops and slower PCs; a frame rate limit (automatic, 120, 60 or 30); and *Draw with*: the graphics card (default) or the processor (experimental, for laptops with two graphics cards) |
 | ③ Appearance | Theme defaults button, glass transparency (each theme keeps its own; Light and OLED start solid), corner rounding, background blur (0 = no blur), blur behind right-click menus, text color (automatic: on clear glass, black over light backgrounds; or white or black), clear glass style (frosted, or experimental liquid for Floating and Original Siri, with its refraction strength and an optional live mode), glass effect on Light/Dark/OLED |
 | ④ Custom theme | Color, opacity, dark-to-light gradient, border width, color and opacity |
