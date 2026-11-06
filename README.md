@@ -13,9 +13,10 @@ Press the **Windows key** (or click **Start**) and type, or pick what you want t
 ## Highlights
 
 - **Four modes**: Original Siri (default), Floating, Window and Fullscreen
-- **Live glass**: real-time blur behind the bar and panels (animated wallpapers and videos keep playing underneath), plus an experimental liquid glass with refraction in the Siri modes
+- **Live glass**: real-time blur behind the bar and panels (animated wallpapers and videos keep playing underneath), plus a liquid glass with refraction in the Siri modes
 - **Search everything at once**: type in the bar and apps, actions, folders and files show up together in one list, like Spotlight or Flow Launcher, or pick a category (Apps, Files, Actions, Clipboard) to search only there
 - **Calculator**: type a calculation and its result shows first; Enter copies it
+- **Windows Settings**: type *display*, *startup apps*, *update*, *wi-fi*... and the matching Settings page opens
 - **App tabs**: All, automatic categories and up to 6 tabs of your own
 - **Recent apps row**: recently opened or installed apps (or the most used ones) on top
 - **Power options**: type *shut down*, *restart*, *sleep*, *lock* or *sign out*, or the floating power button (off by default; turn it on in *Siri bar*)
@@ -26,6 +27,24 @@ Press the **Windows key** (or click **Start**) and type, or pick what you want t
 - **Move the bar**: hold the Siri bar and drag it anywhere, on any monitor
 - **Backup**: save settings, folders, tabs and custom icons to one file and restore them, even after reinstalling
 - **Your language**: follows the Windows display language, or pick one (English, Portuguese, Spanish, French, German, Italian and Simplified Chinese)
+
+---
+
+## What's new in 1.1.0
+
+- **Windows Settings in the search**: about 60 Settings pages (Display, Startup apps, Personalization, Windows Update, Wi-Fi...) are found by name or by what you would type to look for them, and open with Enter.
+- **Open file location**: right-click a file or folder found by the search to see it in File Explorer.
+- **Two glass styles, clearly named**: *Translucent glass* (flat glass with a soft live blur, light on the PC) and *Liquid glass* (the background bends at the edges, like macOS 26; heavier on the PC). The setting's description changes with your choice.
+- **Settings that don't apply are dimmed**: when a setting has no effect with your current choices (for example, the liquid glass options with a flat style, or the Files options with Files off), it turns gray, says why, and turns blue again when it can be used. Whole sections dim the same way (*Custom theme* until you pick the Custom theme).
+- **A new settings panel and a new look in the screenshots**: both GIFs at the top and in *In action* were recorded again.
+
+## Performance
+
+- **Light mode works with any theme.** It is made so slower PCs can enjoy the mod smoothly: no liquid glass, no live blur, no blur behind menus, no shadows, at most 60 frames per second and calmer animations. With the Clear glass theme it draws an acrylic-style translucency instead of the live blur.
+- **Translucent glass is light on the GPU**.
+- **Hover and clicks answer right away**: clear glass areas used to let the mouse through, which made the settings button and the result rows feel slow or skip. Fixed.
+- **Fewer repeated drawing calls**: the blur behind menus and the glass pieces are cached and rebuilt only when needed.
+- **Nothing runs in the background** that you did not ask for: the diagnostic logging used while testing was removed.
 
 ---
 
@@ -90,6 +109,8 @@ A search bar in the macOS 27 style.
   - Then up to **6 tabs of your own**, for example "Games".
 - **First row**: recently opened or installed apps, or the most used ones (configurable), separated from the rest by a thin line.
 - **Actions**: Lock, Sleep, Restart, Shut down, Sign out, Settings, Task Manager, File Explorer, Control Panel, Screenshot and Empty Recycle Bin. Shut down works like Windows' own (fast startup when it is on) and warns before signing off other users who are still signed in.
+- **Windows Settings**: in the general search, about 60 Settings pages (Display, Startup apps, Personalization, Windows Update, Wi-Fi, Bluetooth, Privacy, Accessibility...) are found by name or by what you would type to look for them (*screen*, *wallpaper*, *boot*...), in English or in Portuguese, and open with Enter. They show under their own title, up to 4 at a time, and follow the **Actions** tab being on.
+- **Open file location**: right-click a file or folder found by the search and choose *Open file location* to see it in File Explorer, already selected.
 
 ### Floating
 The bar appears out of an animated circle, the **Siri wave** or a soft glow, with zoom and an adjustable bounce. Clicking it or typing slides the results panel down. When it closes, the bar is "sucked" back into the bubble. Hover the category icon at the start of the bar and it turns into a back arrow, as in Original Siri: a click clears the search, goes back to Applications and closes the results panel.
@@ -134,7 +155,7 @@ The classic Launchpad grid with pages or vertical scrolling, folders and a power
 
 ## Settings panel
 - Click the **⋯** button at the end of the bar (every mode). A window in the style of macOS System Settings grows out of the bar: the sections on the left, with a search field on top, and the settings of the chosen section on the right. Every change applies at once.
-- Sections: **General**, **Appearance**, **Custom theme**, **Search** (search everything, Files and Clipboard), **Siri bar**, **Results size**, **Window and Fullscreen**, **Animations**, **Keyboard shortcuts**, **Apps and icons**, **Performance** and **Backup and defaults**. Every setting has a short line saying what it does, and the ones the chosen mode doesn't use are dimmed with a note.
+- Sections: **General**, **Appearance**, **Custom theme**, **Search** (search everything, Files and Clipboard), **Siri bar**, **Results size**, **Window and Fullscreen**, **Animations**, **Keyboard shortcuts**, **Apps and icons**, **Performance** and **Backup and defaults**. Every setting has a short line saying what it does, and the ones that don't apply to what you chose (the mode, the theme, the glass style or a switch they depend on) are dimmed, say why and can't be changed until they do.
 - Changes made there are kept on top of Windhawk's settings, and a change made later in Windhawk wins again.
 - **Theme defaults** (Appearance) brings back the chosen theme's own look. **Restore all defaults** puts every setting back to how the mod comes and the bar back in the center; folders, tabs and custom icons stay.
 - **Back up** saves everything to a `.siribackup` file: every setting (the icon gallery folder too), folders, tabs, search history, the bar's place and the custom icons, with their pictures inside the file. **Restore a backup** brings it all back, also after uninstalling the mod (which erases its stored data) or on another PC.
@@ -155,8 +176,8 @@ All options are in the **⋯** settings panel (in seven languages) and in the mo
 | ① Mode | Original Siri (default), Floating, Window, Fullscreen |
 | ② Theme | Clear glass, Light, Dark, OLED, Siri (macOS 27 gradient), Custom |
 | Language | Automatic (Windows) or English, Português, Español, Français, Deutsch, Italiano, 中文（简体） |
-| Performance | **Light (faster)** turns off liquid glass, the blur behind menus and the shadows and keeps it to 60 frames per second, for laptops and slower PCs; a frame rate limit (automatic, 120, 60 or 30); and *Draw with*: the graphics card (default) or the processor (experimental, for laptops with two graphics cards) |
-| ③ Appearance | Theme defaults button, glass transparency (each theme keeps its own; Light and OLED start solid), corner rounding, background blur (0 = no blur), blur behind right-click menus, text color (automatic: on clear glass, black over light backgrounds; or white or black), clear glass style (frosted, or experimental liquid for Floating and Original Siri, with its refraction strength and an optional live mode), glass effect on Light/Dark/OLED |
+| Performance | **Light (faster)** works with any theme and is made so slower PCs can enjoy the mod smoothly: it turns off liquid glass, the live blur, the blur behind menus and the shadows, keeps it to 60 frames per second and calms the animations; a frame rate limit (automatic, 120, 60 or 30); and *Draw with*: the graphics card (default) or the processor (experimental, for laptops with two graphics cards) |
+| ③ Appearance | Theme defaults button, glass transparency (each theme keeps its own; Light and OLED start solid), corner rounding, background blur (0 = no blur), blur behind right-click menus, text color (automatic: on clear glass, black over light backgrounds; or white or black), glass style (translucent glass with a live blur, or liquid glass for Floating and Original Siri, with its refraction strength and an optional live mode), glass effect on Light/Dark/OLED |
 | ④ Custom theme | Color, opacity, dark-to-light gradient, border width, color and opacity |
 | ⑤ Window and Fullscreen | Window size, search style (top bar or centered box), power button and its position, opening and closing animations (pop, fade, rise from/sink into the taskbar, CRT), animation speed, blur behind open folders |
 | ⑥ Floating and Original Siri | Bar size (96 px tall by default), results box width and rows for each category (Files and Clipboard as wide as the bar by default), circle animation (Siri wave, soft glow, none), circle zoom, bounce of the circle and of the results box, opening/closing duration, animation speed, search everything when typing, power options when typing, floating power button (off by default) and its side (left or right of the bar), first row (recent, most used, off), Original Siri category shortcuts for Applications, Files, Actions and Clipboard (defaults **Ctrl+1**, **Ctrl+2**, **Ctrl+3**, **Ctrl+4**; any combination starting with Ctrl, e.g. Ctrl+Shift+F or Ctrl+F2), and whether they also work with the launcher closed (off by default) |

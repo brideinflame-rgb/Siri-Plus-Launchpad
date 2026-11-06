@@ -13,9 +13,10 @@ Aperte a **tecla Windows** (ou clique em **Iniciar**) e digite, ou escolha o que
 ## Destaques
 
 - **Quatro modos**: Siri original (padrão), Flutuante, Janela e Tela cheia
-- **Vidro ao vivo**: desfoque em tempo real atrás da barra e dos painéis (papéis de parede animados e vídeos continuam rodando por baixo), além de um vidro líquido experimental com refração nos modos Siri
+- **Vidro ao vivo**: desfoque em tempo real atrás da barra e dos painéis (papéis de parede animados e vídeos continuam rodando por baixo), além de um vidro líquido com refração nos modos Siri
 - **Pesquise tudo de uma vez**: digite na barra e apps, ações, pastas e arquivos aparecem juntos numa lista, como no Spotlight ou no Flow Launcher, ou escolha uma categoria (Apps, Arquivos, Ações, Área de transferência) para pesquisar só nela
 - **Calculadora**: digite uma conta e o resultado aparece primeiro; Enter copia
+- **Configurações do Windows**: digite *tela*, *aplicativos de inicialização*, *atualização*, *wi-fi*... e a página de Configurações correspondente abre
 - **Abas de apps**: Todos, categorias automáticas e até 6 abas suas
 - **Linha de apps recentes**: apps abertos ou instalados por último (ou os mais usados) no topo
 - **Opções de energia**: digite *desligar*, *reiniciar*, *suspender*, *bloquear* ou *sair*, ou use o botão de energia flutuante (desligado por padrão; ligue em *Barra Siri*)
@@ -26,6 +27,24 @@ Aperte a **tecla Windows** (ou clique em **Iniciar**) e digite, ou escolha o que
 - **Mova a barra**: segure a barra Siri e arraste para qualquer lugar, em qualquer monitor
 - **Backup**: salve configurações, pastas, abas e ícones personalizados num arquivo e restaure, mesmo depois de reinstalar
 - **Seu idioma**: segue o idioma do Windows, ou escolha um (inglês, português, espanhol, francês, alemão, italiano e chinês simplificado)
+
+---
+
+## Novidades da 1.1.0
+
+- **Configurações do Windows na busca**: cerca de 60 páginas das Configurações (Tela, Aplicativos de inicialização, Personalização, Windows Update, Wi-Fi...) são encontradas pelo nome ou pelo que você digitaria para procurá-las, e abrem com Enter.
+- **Abrir local do arquivo**: clique com o botão direito num arquivo ou pasta encontrado na busca para vê-lo no Explorador de Arquivos.
+- **Dois estilos de vidro, com nomes claros**: *Vidro translúcido* (vidro plano com um desfoque ao vivo suave, leve para o PC) e *Vidro líquido* (o fundo se curva nas bordas, como no macOS 26; mais pesado para o PC). A descrição da configuração muda conforme a sua escolha.
+- **Ajustes que não se aplicam ficam cinza**: quando um ajuste não tem efeito com as suas escolhas atuais (por exemplo, as opções do vidro líquido com um estilo plano, ou as opções de Arquivos com Arquivos desligado), ele fica cinza, diz o motivo e volta a ficar azul quando pode ser usado. Seções inteiras ficam assim também (*Tema personalizado* até você escolher o tema Personalizado).
+- **Novo painel de configurações e novo visual nas capturas**: os dois GIFs do topo e de *Em ação* foram gravados de novo.
+
+## Desempenho
+
+- **O modo Leve funciona com qualquer tema.** Foi feito para que PCs mais lentos aproveitem o mod com fluidez: sem vidro líquido, sem desfoque ao vivo, sem desfoque atrás dos menus, sem sombras, no máximo 60 quadros por segundo e animações mais calmas. Com o tema Vidro transparente, ele desenha uma translucidez no estilo acrílico no lugar do desfoque ao vivo.
+- **O vidro translúcido é leve para a placa de vídeo**.
+- **Passar o mouse e clicar respondem na hora**: as áreas de vidro transparente deixavam o mouse atravessar, e isso fazia o botão de configurações e as linhas de resultado parecerem lentos ou pularem. Corrigido.
+- **Menos desenho repetido**: o desfoque atrás dos menus e as peças do vidro ficam em cache e só são refeitos quando preciso.
+- **Nada roda em segundo plano sem você pedir**: o registro de diagnóstico usado nos testes foi removido.
 
 ---
 
@@ -90,6 +109,8 @@ Uma barra de pesquisa no estilo do macOS 27.
   - Depois até **6 abas suas**, por exemplo "Jogos".
 - **Primeira linha**: apps abertos ou instalados por último, ou os mais usados (configurável), separados do resto por uma linha fina.
 - **Ações**: Bloquear, Suspender, Reiniciar, Desligar, Sair, Configurações, Gerenciador de Tarefas, Explorador de Arquivos, Painel de Controle, Captura de tela e Esvaziar Lixeira. Desligar funciona como o do próprio Windows (inicialização rápida quando ligada) e avisa antes de desconectar outros usuários ainda conectados.
+- **Configurações do Windows**: na busca geral, cerca de 60 páginas das Configurações (Tela, Aplicativos de inicialização, Personalização, Windows Update, Wi-Fi, Bluetooth, Privacidade, Acessibilidade...) são encontradas pelo nome ou pelo que você digitaria para procurá-las (*monitor*, *papel de parede*, *boot*...), em inglês ou português, e abrem com Enter. Aparecem sob um título próprio, até 4 por vez, e dependem da aba **Ações** estar ativada.
+- **Abrir local do arquivo**: clique com o botão direito em um arquivo ou pasta encontrado na busca e escolha *Abrir local do arquivo* para vê-lo no Explorador de Arquivos, já selecionado.
 
 ### Flutuante
 A barra surge de um círculo animado, a **onda Siri** ou um brilho suave, com zoom e um quique ajustável. Clicar ou digitar faz o painel de resultados descer. Ao fechar, a barra é "sugada" de volta para a bolha. Passe o mouse no ícone da categoria no começo da barra e ele vira uma seta de voltar, como no Siri original: um clique limpa a pesquisa, volta a Aplicativos e fecha o painel de resultados.
@@ -134,7 +155,7 @@ A grade clássica do Launchpad com páginas ou rolagem vertical, pastas e um bot
 
 ## Painel de configurações
 - Clique no botão **⋯** no fim da barra (em todos os modos). Uma janela no estilo dos Ajustes do Sistema do macOS nasce da barra: as seções à esquerda, com um campo de pesquisa no topo, e as configurações da seção escolhida à direita. Toda mudança vale na hora.
-- Seções: **Geral**, **Aparência**, **Tema personalizado**, **Pesquisa** (pesquisa geral, Arquivos e Área de transferência), **Barra Siri**, **Tamanho dos resultados**, **Janela e Tela cheia**, **Animações**, **Atalhos de teclado**, **Apps e ícones**, **Desempenho** e **Backup e padrões**. Cada configuração tem uma linha curta dizendo o que faz, e as que o modo escolhido não usa ficam apagadas, com uma nota.
+- Seções: **Geral**, **Aparência**, **Tema personalizado**, **Pesquisa** (pesquisa geral, Arquivos e Área de transferência), **Barra Siri**, **Tamanho dos resultados**, **Janela e Tela cheia**, **Animações**, **Atalhos de teclado**, **Apps e ícones**, **Desempenho** e **Backup e padrões**. Cada configuração tem uma linha curta dizendo o que faz, e as que não valem para o que você escolheu (o modo, o tema, o estilo do vidro ou um interruptor de que dependem) ficam apagadas, dizem o motivo e não podem ser alteradas até valerem.
 - O que você muda ali fica por cima das configurações do Windhawk, e uma mudança feita depois no Windhawk volta a valer.
 - **Padrão do tema** (Aparência) traz de volta o visual próprio do tema escolhido. **Restaurar todos os padrões** volta todas as configurações ao que o mod traz e a barra ao centro; pastas, abas e ícones personalizados ficam.
 - **Fazer backup** salva tudo num arquivo `.siribackup`: todas as configurações (inclusive a pasta da galeria de ícones), pastas, abas, histórico de pesquisas, o lugar da barra e os ícones personalizados, com as imagens dentro do arquivo. **Restaurar backup** traz tudo de volta, também depois de desinstalar o mod (o que apaga os dados guardados) ou em outro PC.
@@ -155,8 +176,8 @@ Todas as opções estão no painel **⋯** (em sete idiomas) e na aba **Configur
 | ① Modo | Siri original (padrão), Flutuante, Janela, Tela cheia |
 | ② Tema | Vidro transparente, Claro, Escuro, OLED, Siri (gradiente do macOS 27), Personalizado |
 | Idioma | Automático (Windows) ou English, Português, Español, Français, Deutsch, Italiano, 中文（简体） |
-| Desempenho | **Leve (mais rápido)** desliga o vidro líquido, o desfoque atrás dos menus e as sombras e limita a 60 quadros por segundo, para notebooks e PCs mais lentos; um limite de quadros (automático, 120, 60 ou 30); e *Desenhar com*: a placa de vídeo (padrão) ou o processador (experimental, para notebooks com duas placas de vídeo) |
-| ③ Aparência | Botão Padrão do tema, transparência do vidro (cada tema guarda a sua; Claro e OLED começam sólidos), arredondamento dos cantos, desfoque do fundo (0 = sem desfoque), desfoque atrás dos menus de clique direito, cor do texto (automática: no vidro transparente, preto sobre fundos claros; ou branco ou preto), estilo do vidro transparente (fosco, ou líquido experimental no Flutuante e no Siri original, com a força da refração e um modo ao vivo opcional), efeito vidro no Claro/Escuro/OLED |
+| Desempenho | **Leve (mais rápido)** funciona com qualquer tema e foi feito para que PCs menos potentes aproveitem o mod com fluidez: desliga o vidro líquido, o desfoque ao vivo, o desfoque atrás dos menus e as sombras, limita a 60 quadros por segundo e deixa as animações mais calmas; um limite de quadros (automático, 120, 60 ou 30); e *Desenhar com*: a placa de vídeo (padrão) ou o processador (experimental, para notebooks com duas placas de vídeo) |
+| ③ Aparência | Botão Padrão do tema, transparência do vidro (cada tema guarda a sua; Claro e OLED começam sólidos), arredondamento dos cantos, desfoque do fundo (0 = sem desfoque), desfoque atrás dos menus de clique direito, cor do texto (automática: no vidro transparente, preto sobre fundos claros; ou branco ou preto), estilo do vidro (vidro translúcido com desfoque ao vivo, ou vidro líquido no Flutuante e no Siri original, com a força da refração e um modo ao vivo opcional), efeito vidro no Claro/Escuro/OLED |
 | ④ Tema personalizado | Cor, opacidade, degradê escuro → claro, espessura, cor e opacidade da borda |
 | ⑤ Janela e Tela cheia | Tamanho da janela, estilo da pesquisa (barra no topo ou caixa centralizada), botão de energia e sua posição, animações de abertura e fechamento (surgir, esmaecer, subir da/descer até a barra de tarefas, CRT), velocidade das animações, desfoque atrás das pastas abertas |
 | ⑥ Flutuante e Siri original | Tamanho da barra (96 px de altura por padrão), largura e linhas da caixa de resultados de cada categoria (Arquivos e Área de transferência da largura da barra por padrão), animação do círculo (onda Siri, brilho suave, nenhuma), zoom do círculo, quique do círculo e da caixa de resultados, duração da abertura e do fechamento, velocidade das animações, pesquisa geral ao digitar, opções de energia ao digitar, botão de energia flutuante (desligado por padrão) e seu lado (esquerda ou direita da barra), primeira linha (recentes, mais usados, desligada), atalhos das categorias do Siri original para Aplicativos, Arquivos, Ações e Área de transferência (padrão **Ctrl+1**, **Ctrl+2**, **Ctrl+3**, **Ctrl+4**; qualquer combinação começando com Ctrl, por exemplo Ctrl+Shift+F ou Ctrl+F2), e se também funcionam com o menu fechado (desligado por padrão) |
