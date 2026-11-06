@@ -6,7 +6,7 @@ A [Windhawk](https://windhawk.net) mod that replaces the Windows 11 Start menu w
 
 Press the **Windows key** (or click **Start**) and type, or pick what you want to search from the menu that drops down from the bar.
 
-![Original Siri mode](screenshots/original-siri.gif)
+![Original Siri mode](screenshots/original-siri-v2.gif)
 
 ---
 
@@ -85,7 +85,7 @@ Press the **Windows key** (or click **Start**) and type, or pick what you want t
 ### In action
 | Settings panel | Moving the bar |
 |---|---|
-| <img src="screenshots/settings-panel.gif" alt="The settings panel" width="100%"> | <img src="screenshots/drag-the-bar.gif" alt="Dragging the Siri bar" width="100%"> |
+| <img src="screenshots/settings-panel-v2.gif" alt="The settings panel" width="100%"> | <img src="screenshots/drag-the-bar.gif" alt="Dragging the Siri bar" width="100%"> |
 
 | Right-click menus and tabs | Power options |
 |---|---|

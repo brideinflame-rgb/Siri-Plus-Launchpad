@@ -6,7 +6,7 @@ Um mod do [Windhawk](https://windhawk.net) que substitui o menu Iniciar do Windo
 
 Aperte a **tecla Windows** (ou clique em **Iniciar**) e digite, ou escolha o que quer pesquisar no menu que desce da barra.
 
-![Modo Siri original](screenshots/original-siri.gif)
+![Modo Siri original](screenshots/original-siri-v2.gif)
 
 ---
 
@@ -85,7 +85,7 @@ Aperte a **tecla Windows** (ou clique em **Iniciar**) e digite, ou escolha o que
 ### Em ação
 | Painel de configurações | Movendo a barra |
 |---|---|
-| <img src="screenshots/settings-panel.gif" alt="O painel de configurações" width="100%"> | <img src="screenshots/drag-the-bar.gif" alt="Arrastando a barra Siri" width="100%"> |
+| <img src="screenshots/settings-panel-v2.gif" alt="O painel de configurações" width="100%"> | <img src="screenshots/drag-the-bar.gif" alt="Arrastando a barra Siri" width="100%"> |
 
 | Menus de clique direito e abas | Opções de energia |
 |---|---|
