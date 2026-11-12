@@ -34,7 +34,7 @@ Aperte a **tecla Windows** (ou clique em **Iniciar**) e digite, ou escolha o que
 
 - **Tema Vidro líquido personalizado**: a sua cor (começa preta) sólida no topo, afinando suavemente até virar vidro transparente, com uma linha fina de luz na borda de baixo. Tem ajustes próprios: força da cor no topo, até onde a cor desce, a cor do vidro e a cor da seleção nos menus.
 - **Refração mais forte**: acima de 60 % a borda do vidro líquido fica mais larga e mais funda, como uma lente grossa. O padrão agora é 70 %.
-- **Vidro líquido por padrão**: os temas de vidro começam com o estilo Vidro líquido acompanhando o fundo ao vivo. Com isso ligado, o launcher não aparece em prints nem gravações; desligue *Acompanhar o fundo ao vivo* para capturá-lo, ou escolha *Leve* em Desempenho num PC mais lento.
+- **Vidro líquido por padrão**: os temas de vidro começam com o estilo Vidro líquido acompanhando o fundo ao vivo. Com isso ligado, o launcher não aparece em prints nem gravações; desligue *Vidro líquido acompanha o fundo ao vivo* para capturá-lo, ou escolha *Leve* em Desempenho num PC mais lento.
 - **Apps novos aparecem sozinhos**: a lista de apps acompanha instalações e remoções, de instaladores e da Microsoft Store, sem desligar e ligar o mod.
 - **Continua funcionando logo depois de uma atualização do Windows**: quando o Windhawk ainda não tem os símbolos dos arquivos novos do Windows, o mod abre com a tecla Windows e o botão Iniciar de um jeito provisório em vez de parar (veja *Compatibilidade*).
 

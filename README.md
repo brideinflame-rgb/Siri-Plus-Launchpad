@@ -34,7 +34,7 @@ Press the **Windows key** (or click **Start**) and type, or pick what you want t
 
 - **Custom liquid glass theme**: your color (black to start with) solid at the top, thinning out smoothly into clear glass, with a fine line of light along the bottom edge. Its own settings: color strength at the top, how far down the color goes, the glass color, and the selection color in menus.
 - **Stronger refraction**: above 60 % the liquid glass edge gets wider and deeper, like a thick lens. The default is now 70 %.
-- **Liquid glass by default**: glass themes start with the Liquid glass style following the background live. Note that, while this is on, the launcher does not show in screenshots or recordings; turn *Follow the background live* off to capture it, or pick *Light* in Performance on a slower PC.
+- **Liquid glass by default**: glass themes start with the Liquid glass style following the background live. Note that, while this is on, the launcher does not show in screenshots or recordings; turn *Liquid glass follows the background live* off to capture it, or pick *Light* in Performance on a slower PC.
 - **New apps show up by themselves**: the app list follows installs and removals, from installers and from the Microsoft Store, without turning the mod off and on.
 - **Keeps working right after a Windows update**: when Windhawk doesn't have the symbols for the new Windows files yet, the mod opens with the Windows key and the Start button in a temporary way instead of stopping (see *Compatibility*).
 
