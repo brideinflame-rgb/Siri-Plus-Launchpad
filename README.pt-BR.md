@@ -34,7 +34,7 @@ Aperte a **tecla Windows** (ou clique em **Iniciar**) e digite, ou escolha o que
 
 - **Tema Vidro líquido personalizado**: a sua cor (começa preta) sólida no topo, afinando suavemente até virar vidro transparente, com uma linha fina de luz na borda de baixo. Tem ajustes próprios: força da cor no topo, até onde a cor desce, a cor do vidro e a cor da seleção nos menus.
 - **Refração mais forte**: acima de 60 % a borda do vidro líquido fica mais larga e mais funda, como uma lente grossa. O padrão agora é 70 %.
-- **Vidro líquido por padrão**: os temas de vidro começam com o estilo Vidro líquido acompanhando o fundo ao vivo. Com isso ligado, o launcher não aparece em prints nem gravações; desligue *Vidro líquido acompanha o fundo ao vivo* para capturá-lo, ou escolha *Leve* em Desempenho num PC mais lento.
+- **Vidro líquido por padrão**: os temas de vidro começam com o estilo Vidro líquido. *Vidro líquido acompanha o fundo ao vivo* fica desligado, a não ser que você ligue (com ele ligado, o launcher não aparece em prints nem gravações). Num PC mais lento, escolha *Leve* em Desempenho.
 - **Apps novos aparecem sozinhos**: a lista de apps acompanha instalações e remoções, de instaladores e da Microsoft Store, sem desligar e ligar o mod.
 - **Continua funcionando logo depois de uma atualização do Windows**: quando o Windhawk ainda não tem os símbolos dos arquivos novos do Windows, o mod abre com a tecla Windows e o botão Iniciar de um jeito provisório em vez de parar (veja *Compatibilidade*).
 
@@ -62,6 +62,10 @@ Aperte a **tecla Windows** (ou clique em **Iniciar**) e digite, ou escolha o que
 | Vidro transparente | Escuro | OLED |
 |---|---|---|
 | <img src="screenshots/original-glass.png" alt="Siri original, tema Vidro transparente" width="100%"> | <img src="screenshots/original-dark.png" alt="Siri original, tema Escuro" width="100%"> | <img src="screenshots/original-oled.png" alt="Siri original, tema OLED" width="100%"> |
+
+| Vidro líquido personalizado |
+|---|
+| <img src="screenshots/original-custom-liquid.png" alt="Siri original, tema Vidro líquido personalizado" width="60%"> |
 
 ### Flutuante
 | Vidro transparente | Claro | Gradiente Siri |
