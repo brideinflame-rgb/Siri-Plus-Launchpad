@@ -22,13 +22,21 @@ Aperte a **tecla Windows** (ou clique em **Iniciar**) e digite, ou escolha o que
 - **Opções de energia**: digite *desligar*, *reiniciar*, *suspender*, *bloquear* ou *sair*, ou use o botão de energia flutuante (desligado por padrão; ligue em *Barra Siri*)
 - **Atalhos de teclado**: Ctrl+1 … Ctrl+4 levam a Aplicativos, Arquivos, Ações e Área de transferência, e também podem abrir o menu de qualquer programa (opcional)
 - **Ícones personalizados**: dê a qualquer app um ícone seu, de uma pasta de ícones (como um pacote baixado), com busca e filtro de cor
-- **Temas**: Vidro transparente, Claro, Escuro, OLED (preto profundo), Siri (gradiente do macOS 27) e um tema totalmente Personalizado, com efeito vidro opcional no Claro, Escuro e OLED
+- **Temas**: Vidro transparente, Vidro líquido personalizado (a sua cor no topo, ficando transparente embaixo), Claro, Escuro, OLED (preto profundo), Siri (gradiente do macOS 27) e um tema totalmente Personalizado, com efeito vidro opcional no Claro, Escuro e OLED
 - **Painel de configurações**: o botão **⋯** no fim da barra abre todas as configurações num painel no estilo do macOS, aplicadas na hora
 - **Mova a barra**: segure a barra Siri e arraste para qualquer lugar, em qualquer monitor
 - **Backup**: salve configurações, pastas, abas e ícones personalizados num arquivo e restaure, mesmo depois de reinstalar
 - **Seu idioma**: segue o idioma do Windows, ou escolha um (inglês, português, espanhol, francês, alemão, italiano e chinês simplificado)
 
 ---
+
+## Novidades da 1.2.0
+
+- **Tema Vidro líquido personalizado**: a sua cor (começa preta) sólida no topo, afinando suavemente até virar vidro transparente, com uma linha fina de luz na borda de baixo. Tem ajustes próprios: força da cor no topo, até onde a cor desce, a cor do vidro e a cor da seleção nos menus.
+- **Refração mais forte**: acima de 60 % a borda do vidro líquido fica mais larga e mais funda, como uma lente grossa. O padrão agora é 70 %.
+- **Vidro líquido por padrão**: os temas de vidro começam com o estilo Vidro líquido acompanhando o fundo ao vivo. Com isso ligado, o launcher não aparece em prints nem gravações; desligue *Acompanhar o fundo ao vivo* para capturá-lo, ou escolha *Leve* em Desempenho num PC mais lento.
+- **Apps novos aparecem sozinhos**: a lista de apps acompanha instalações e remoções, de instaladores e da Microsoft Store, sem desligar e ligar o mod.
+- **Continua funcionando logo depois de uma atualização do Windows**: quando o Windhawk ainda não tem os símbolos dos arquivos novos do Windows, o mod abre com a tecla Windows e o botão Iniciar de um jeito provisório em vez de parar (veja *Compatibilidade*).
 
 ## Novidades da 1.1.0
 
@@ -174,7 +182,7 @@ Todas as opções estão no painel **⋯** (em sete idiomas) e na aba **Configur
 | Bloco | Opções |
 |---|---|
 | ① Modo | Siri original (padrão), Flutuante, Janela, Tela cheia |
-| ② Tema | Vidro transparente, Claro, Escuro, OLED, Siri (gradiente do macOS 27), Personalizado |
+| ② Tema | Vidro transparente, Vidro líquido personalizado, Claro, Escuro, OLED, Siri (gradiente do macOS 27), Personalizado |
 | Idioma | Automático (Windows) ou English, Português, Español, Français, Deutsch, Italiano, 中文（简体） |
 | Desempenho | **Leve (mais rápido)** funciona com qualquer tema e foi feito para que PCs menos potentes aproveitem o mod com fluidez: desliga o vidro líquido, o desfoque ao vivo, o desfoque atrás dos menus e as sombras, limita a 60 quadros por segundo e deixa as animações mais calmas; um limite de quadros (automático, 120, 60 ou 30); e *Desenhar com*: a placa de vídeo (padrão) ou o processador (experimental, para notebooks com duas placas de vídeo) |
 | ③ Aparência | Botão Padrão do tema, transparência do vidro (cada tema guarda a sua; Claro e OLED começam sólidos), arredondamento dos cantos, desfoque do fundo (0 = sem desfoque), desfoque atrás dos menus de clique direito, cor do texto (automática: no vidro transparente, preto sobre fundos claros; ou branco ou preto), estilo do vidro (vidro translúcido com desfoque ao vivo, ou vidro líquido no Flutuante e no Siri original, com a força da refração e um modo ao vivo opcional), efeito vidro no Claro/Escuro/OLED |
@@ -216,6 +224,7 @@ Todas as opções estão no painel **⋯** (em sete idiomas) e na aba **Configur
 - O histórico da área de transferência fica só na memória e nunca é gravado em disco.
 
 ## Compatibilidade
+- **Logo depois de uma atualização do Windows**: o Windhawk pode ainda não ter os símbolos dos arquivos novos do Windows, e o mod não consegue colocar o gancho do Iniciar. Ele continua funcionando de um jeito provisório até eles chegarem: a tecla Windows e os cliques no botão Iniciar são capturados diretamente e abrem o launcher como sempre; só Ctrl+Esc ou um toque no botão Iniciar mostra o menu Iniciar do Windows por um instante antes do launcher tomar o lugar. Não é preciso fazer nada; o modo normal volta sozinho na próxima vez que o mod carregar com os símbolos disponíveis.
 - **Atalhos das categorias de qualquer programa** (desligado por padrão): com *Atalhos → Também com o menu fechado* ligado, Ctrl+1 … Ctrl+4 viram teclas de atalho do sistema, e os outros programas deixam de recebê-las (por exemplo, o Ctrl+1 do navegador para a primeira aba). Deixe desligado, ou escolha outras combinações, se precisar dessas teclas em outro lugar.
 - **Fullscreen Start** (`fullscreen-start`): não ative os dois. Cada um substitui o menu Iniciar pelo mesmo gancho sem chamar o original, então só um deles receberia a tecla Windows.
 - **Spotlight Launcher**: ele adiciona uma barra de pesquisa separada no Alt+Espaço e não mexe no menu Iniciar. Este mod substitui o próprio menu Iniciar (tecla Windows e botão Iniciar) e adiciona abas de apps, pastas, arquivos, histórico da área de transferência e ações. Dá para usar os dois juntos.

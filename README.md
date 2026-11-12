@@ -22,13 +22,21 @@ Press the **Windows key** (or click **Start**) and type, or pick what you want t
 - **Power options**: type *shut down*, *restart*, *sleep*, *lock* or *sign out*, or the floating power button (off by default; turn it on in *Siri bar*)
 - **Keyboard shortcuts**: Ctrl+1 … Ctrl+4 jump to Applications, Files, Actions and Clipboard, and can also open the launcher from any program (optional)
 - **Custom icons**: give any app your own icon from a folder of your icons (such as a downloaded icon pack), with search and a color filter
-- **Themes**: Clear glass, Light, Dark, OLED (deep black), Siri (macOS 27 gradient) and a fully Custom theme, with an optional glass effect on Light, Dark and OLED
+- **Themes**: Clear glass, Custom liquid glass (your color at the top, fading to clear glass at the bottom), Light, Dark, OLED (deep black), Siri (macOS 27 gradient) and a fully Custom theme, with an optional glass effect on Light, Dark and OLED
 - **Settings panel**: the **⋯** button at the end of the bar opens every setting in a macOS-style panel, applied live
 - **Move the bar**: hold the Siri bar and drag it anywhere, on any monitor
 - **Backup**: save settings, folders, tabs and custom icons to one file and restore them, even after reinstalling
 - **Your language**: follows the Windows display language, or pick one (English, Portuguese, Spanish, French, German, Italian and Simplified Chinese)
 
 ---
+
+## What's new in 1.2.0
+
+- **Custom liquid glass theme**: your color (black to start with) solid at the top, thinning out smoothly into clear glass, with a fine line of light along the bottom edge. Its own settings: color strength at the top, how far down the color goes, the glass color, and the selection color in menus.
+- **Stronger refraction**: above 60 % the liquid glass edge gets wider and deeper, like a thick lens. The default is now 70 %.
+- **Liquid glass by default**: glass themes start with the Liquid glass style following the background live. Note that, while this is on, the launcher does not show in screenshots or recordings; turn *Follow the background live* off to capture it, or pick *Light* in Performance on a slower PC.
+- **New apps show up by themselves**: the app list follows installs and removals, from installers and from the Microsoft Store, without turning the mod off and on.
+- **Keeps working right after a Windows update**: when Windhawk doesn't have the symbols for the new Windows files yet, the mod opens with the Windows key and the Start button in a temporary way instead of stopping (see *Compatibility*).
 
 ## What's new in 1.1.0
 
@@ -174,7 +182,7 @@ All options are in the **⋯** settings panel (in seven languages) and in the mo
 | Block | Options |
 |---|---|
 | ① Mode | Original Siri (default), Floating, Window, Fullscreen |
-| ② Theme | Clear glass, Light, Dark, OLED, Siri (macOS 27 gradient), Custom |
+| ② Theme | Clear glass, Custom liquid glass, Light, Dark, OLED, Siri (macOS 27 gradient), Custom |
 | Language | Automatic (Windows) or English, Português, Español, Français, Deutsch, Italiano, 中文（简体） |
 | Performance | **Light (faster)** works with any theme and is made so slower PCs can enjoy the mod smoothly: it turns off liquid glass, the live blur, the blur behind menus and the shadows, keeps it to 60 frames per second and calms the animations; a frame rate limit (automatic, 120, 60 or 30); and *Draw with*: the graphics card (default) or the processor (experimental, for laptops with two graphics cards) |
 | ③ Appearance | Theme defaults button, glass transparency (each theme keeps its own; Light and OLED start solid), corner rounding, background blur (0 = no blur), blur behind right-click menus, text color (automatic: on clear glass, black over light backgrounds; or white or black), glass style (translucent glass with a live blur, or liquid glass for Floating and Original Siri, with its refraction strength and an optional live mode), glass effect on Light/Dark/OLED |
@@ -216,6 +224,7 @@ All options are in the **⋯** settings panel (in seven languages) and in the mo
 - The clipboard history lives in memory only and is never written to disk.
 
 ## Compatibility
+- **Right after a Windows update**: Windhawk may not have the symbols for the new Windows files yet, and the mod can't place its Start hook. It keeps working in a temporary way until they arrive: the Windows key and clicks on the Start button are caught directly and open the launcher as always; only Ctrl+Esc or a touch on the Start button shows Windows' own Start menu for a moment before the launcher takes its place. Nothing needs to be done; the normal way comes back by itself the next time the mod loads with the symbols available.
 - **Category shortcuts from any program** (off by default): when *Shortcuts → Also with the launcher closed* is on, Ctrl+1 … Ctrl+4 are registered as system hotkeys, so other programs no longer get them (for example, the browser's Ctrl+1 for the first tab). Leave it off, or pick other combinations, if you need those keys elsewhere.
 - **Fullscreen Start** (`fullscreen-start`): don't enable both. Each one replaces the Start menu through the same hook without calling the original, so only one of them would get the Windows key.
 - **Spotlight Launcher**: it adds a separate search bar on Alt+Space and leaves the Start menu alone. This mod replaces the Start menu itself (Windows key and Start button) and adds app tabs, folders, files, clipboard history and actions. Both can be used together.
