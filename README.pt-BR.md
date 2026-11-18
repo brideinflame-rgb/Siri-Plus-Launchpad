@@ -6,7 +6,7 @@ Um mod do [Windhawk](https://windhawk.net) que substitui o menu Iniciar do Windo
 
 Aperte a **tecla Windows** (ou clique em **Iniciar**) e digite, ou escolha o que quer pesquisar no menu que desce da barra.
 
-![Modo Siri original](screenshots/original-siri-v2.gif)
+![Modo Siri original](screenshots/siri-plus-launchpad-1.3.webp)
 
 ---
 
@@ -20,19 +20,33 @@ Aperte a **tecla Windows** (ou clique em **Iniciar**) e digite, ou escolha o que
 - **Abas de apps**: Todos, categorias automáticas e até 6 abas suas
 - **Linha de apps recentes**: apps abertos ou instalados por último (ou os mais usados) no topo
 - **Opções de energia**: digite *desligar*, *reiniciar*, *suspender*, *bloquear* ou *sair*, ou use o botão de energia flutuante (desligado por padrão; ligue em *Barra Siri*)
-- **Atalhos de teclado**: Ctrl+1 … Ctrl+4 levam a Aplicativos, Arquivos, Ações e Área de transferência, e também podem abrir o menu de qualquer programa (opcional)
+- **Atalhos de teclado**: Ctrl+1 … Ctrl+5 levam a Aplicativos, Arquivos, Ações, Área de transferência e Celular, e também podem abrir o menu de qualquer programa (opcional)
 - **Ícones personalizados**: dê a qualquer app um ícone seu, de uma pasta de ícones (como um pacote baixado), com busca e filtro de cor
-- **Temas**: Vidro transparente, Vidro líquido personalizado (a sua cor no topo, ficando transparente embaixo), Claro, Escuro, OLED (preto profundo), Siri (gradiente do macOS 27) e um tema totalmente Personalizado, com efeito vidro opcional no Claro, Escuro e OLED
-- **Painel de configurações**: o botão **⋯** no fim da barra abre todas as configurações num painel no estilo do macOS, aplicadas na hora
+- **Temas**: Vidro (vidro transparente, como no Mac OS 27 Finder Bar, sobre um desfoque ao vivo ou parado), Vidro líquido (o fundo se curva nas bordas), Vidro personalizado (a sua cor no topo, ficando transparente embaixo), Claro, Escuro, OLED (preto profundo) e Siri (degradê do macOS 27), com efeito vidro opcional em Claro, Escuro e OLED, botões de vidro, retroiluminação colorida animada e detalhes cromados. **Todo tema pode ser personalizado** em *Aparência*, logo abaixo do tema, guarda os seus próprios ajustes e tem o botão *Restaurar tema padrão*
+- **Painel de configurações**: o botão **⋯** no fim da barra abre todas as configurações num painel no estilo do macOS, aplicadas na hora. Ele só mostra o que vale para o tema e o modo escolhidos
+- **Celular**: o seu celular vinculado no Vincular ao Celular, com a bateria e as notificações chegando (opcional, desligado por padrão)
 - **Mova a barra**: segure a barra Siri e arraste para qualquer lugar, em qualquer monitor
 - **Backup**: salve configurações, pastas, abas e ícones personalizados num arquivo e restaure, mesmo depois de reinstalar
 - **Seu idioma**: segue o idioma do Windows, ou escolha um (inglês, português, espanhol, francês, alemão, italiano e chinês simplificado)
 
 ---
 
+## Novidades da 1.3.0
+
+- **Temas reorganizados**: **Vidro** (vidro transparente, como no Mac OS 27 Finder Bar), **Vidro líquido** (o fundo se curva nas bordas) e **Vidro personalizado** (a sua cor no topo), além de Claro, Siri, Escuro e OLED. Cada tema guarda a sua personalização logo abaixo dele em *Aparência*, e o painel só mostra o que vale para o tema e o modo escolhidos.
+- **Vidro limpo em todos os modos**: Vidro e Vidro líquido agora desfocam a imagem atrás deles por conta própria, no Flutuante, Siri original, Janela e Tela cheia, então as cores de trás ficam limpas em vez de parecerem borradas. Baixar a transparência acrescenta um véu branco fino e uma borda clara, em vez de um tom fumê escuro. No modo de desempenho Leve, o vidro fica branco leitoso sob texto escuro, ou azul-acinzentado frio sob texto branco.
+- **Vidro no Escuro e no OLED**: com o *Efeito vidro* ligado, esses temas viram um vidro escuro de verdade, com o desfoque aparecendo através, mais brilho e espessura nas bordas.
+- **Botões de vidro**: botões, abas, teclas de atalho, ícones dos menus e os controles das configurações em vidro límpido e polido (dá para desligar).
+- **Retroiluminação animada**: um brilho colorido em volta da barra, da caixa de resultados, dos menus e dos botões, com 1 a 5 cores girando em volta e ajuste de intensidade (desligada por padrão).
+- **Detalhes cromados**: uma borda cromada animada em volta da barra, da caixa e dos menus (ligada por padrão só no OLED) e um anel cromado no botão de configurações com o mouse em cima, em todos os modos. Os dois podem ser desligados.
+- **Seleção em duas cores**: os menus podem destacar o item sob o mouse com duas cores misturadas (o OLED começa assim).
+- **Visual próprio da janela de configurações**: seguir o tema, ou um vidro claro ou escuro só dela, com desfoque e transparência próprios, em *Backup e padrões*.
+- **Modo Flutuante**: a caixa de resultados pode abrir só de passar o mouse sobre a barra, e Arquivos e Área de transferência ficam abertos sem nada digitado (pesquisas recentes, itens copiados, ou um aviso de que ainda não há nenhum).
+- **Categoria Celular (Vincular ao Celular, desligada por padrão)**: ligue na seção *Celular* do painel de configurações para ver o seu celular vinculado (bateria e conexão), as notificações chegando com o que dizem e atalhos para Mensagens, Chamadas, Fotos e Enviar arquivos. Limpe as notificações uma a uma ou todas; quando o celular tem mais do que a caixa mostra, elas rolam dentro dela. **Ctrl+5** abre direto no Siri original. Veja *Celular* abaixo.
+
 ## Novidades da 1.2.0
 
-- **Tema Vidro líquido personalizado**: a sua cor (começa preta) sólida no topo, afinando suavemente até virar vidro transparente, com uma linha fina de luz na borda de baixo. Tem ajustes próprios: força da cor no topo, até onde a cor desce, a cor do vidro e a cor da seleção nos menus.
+- **Tema Vidro personalizado**: a sua cor (começa preta) sólida no topo, afinando suavemente até virar vidro transparente, com uma linha fina de luz na borda de baixo. Tem ajustes próprios: força da cor no topo, até onde a cor desce, a cor do vidro e a cor da seleção nos menus.
 - **Refração mais forte**: acima de 60 % a borda do vidro líquido fica mais larga e mais funda, como uma lente grossa. O padrão agora é 70 %.
 - **Vidro líquido por padrão**: os temas de vidro começam com o estilo Vidro líquido. *Vidro líquido acompanha o fundo ao vivo* fica desligado, a não ser que você ligue (com ele ligado, o launcher não aparece em prints nem gravações). Num PC mais lento, escolha *Leve* em Desempenho.
 - **Apps novos aparecem sozinhos**: a lista de apps acompanha instalações e remoções, de instaladores e da Microsoft Store, sem desligar e ligar o mod.
@@ -48,7 +62,7 @@ Aperte a **tecla Windows** (ou clique em **Iniciar**) e digite, ou escolha o que
 
 ## Desempenho
 
-- **O modo Leve funciona com qualquer tema.** Foi feito para que PCs mais lentos aproveitem o mod com fluidez: sem vidro líquido, sem desfoque ao vivo, sem desfoque atrás dos menus, sem sombras, no máximo 60 quadros por segundo e animações mais calmas. Com o tema Vidro transparente, ele desenha uma translucidez no estilo acrílico no lugar do desfoque ao vivo.
+- **O modo Leve funciona com qualquer tema.** Foi feito para que PCs mais lentos aproveitem o mod com fluidez: sem vidro líquido, sem desfoque ao vivo, sem desfoque atrás dos menus, sem sombras, no máximo 60 quadros por segundo e animações mais calmas. Com o tema Vidro líquido, ele desenha uma translucidez no estilo acrílico no lugar do desfoque ao vivo.
 - **O vidro translúcido é leve para a placa de vídeo**.
 - **Passar o mouse e clicar respondem na hora**: as áreas de vidro transparente deixavam o mouse atravessar, e isso fazia o botão de configurações e as linhas de resultado parecerem lentos ou pularem. Corrigido.
 - **Menos desenho repetido**: o desfoque atrás dos menus e as peças do vidro ficam em cache e só são refeitos quando preciso.
@@ -59,36 +73,36 @@ Aperte a **tecla Windows** (ou clique em **Iniciar**) e digite, ou escolha o que
 ## Capturas de tela
 
 ### Siri original (padrão)
-| Vidro transparente | Escuro | OLED |
+| Vidro líquido | Escuro | OLED |
 |---|---|---|
-| <img src="screenshots/original-glass.png" alt="Siri original, tema Vidro transparente" width="100%"> | <img src="screenshots/original-dark.png" alt="Siri original, tema Escuro" width="100%"> | <img src="screenshots/original-oled.png" alt="Siri original, tema OLED" width="100%"> |
+| <img src="screenshots/original-glass.png" alt="Siri original, tema Vidro líquido" width="100%"> | <img src="screenshots/original-dark.png" alt="Siri original, tema Escuro" width="100%"> | <img src="screenshots/original-oled.png" alt="Siri original, tema OLED" width="100%"> |
 
-| Vidro líquido personalizado |
+| Vidro personalizado |
 |---|
-| <img src="screenshots/original-custom-liquid.png" alt="Siri original, tema Vidro líquido personalizado" width="60%"> |
+| <img src="screenshots/original-custom-liquid.png" alt="Siri original, tema Vidro personalizado" width="60%"> |
 
 ### Flutuante
-| Vidro transparente | Claro | Gradiente Siri |
+| Vidro líquido | Claro | Gradiente Siri |
 |---|---|---|
-| <img src="screenshots/floating-glass.png" alt="Flutuante, tema Vidro transparente" width="100%"> | <img src="screenshots/floating-light.png" alt="Flutuante, tema Claro" width="100%"> | <img src="screenshots/floating-siri.png" alt="Flutuante, tema Siri" width="100%"> |
+| <img src="screenshots/floating-glass.png" alt="Flutuante, tema Vidro líquido" width="100%"> | <img src="screenshots/floating-light.png" alt="Flutuante, tema Claro" width="100%"> | <img src="screenshots/floating-siri.png" alt="Flutuante, tema Siri" width="100%"> |
 
 | Escuro | OLED |
 |---|---|
 | <img src="screenshots/floating-dark.png" alt="Flutuante, tema Escuro" width="100%"> | <img src="screenshots/floating-oled.png" alt="Flutuante, tema OLED" width="100%"> |
 
 ### Janela
-| Vidro transparente | Claro | Gradiente Siri |
+| Vidro líquido | Claro | Gradiente Siri |
 |---|---|---|
-| <img src="screenshots/window-glass.png" alt="Janela, tema Vidro transparente" width="100%"> | <img src="screenshots/window-light.png" alt="Janela, tema Claro" width="100%"> | <img src="screenshots/window-siri.png" alt="Janela, tema Siri" width="100%"> |
+| <img src="screenshots/window-glass.png" alt="Janela, tema Vidro líquido" width="100%"> | <img src="screenshots/window-light.png" alt="Janela, tema Claro" width="100%"> | <img src="screenshots/window-siri.png" alt="Janela, tema Siri" width="100%"> |
 
 | Escuro | OLED |
 |---|---|
 | <img src="screenshots/window-dark.png" alt="Janela, tema Escuro" width="100%"> | <img src="screenshots/window-oled.png" alt="Janela, tema OLED" width="100%"> |
 
 ### Tela cheia
-| Vidro transparente | Claro | Gradiente Siri |
+| Vidro líquido | Claro | Gradiente Siri |
 |---|---|---|
-| <img src="screenshots/fullscreen-glass.png" alt="Tela cheia, tema Vidro transparente" width="100%"> | <img src="screenshots/fullscreen-light.png" alt="Tela cheia, tema Claro" width="100%"> | <img src="screenshots/fullscreen-siri.png" alt="Tela cheia, tema Siri" width="100%"> |
+| <img src="screenshots/fullscreen-glass.png" alt="Tela cheia, tema Vidro líquido" width="100%"> | <img src="screenshots/fullscreen-light.png" alt="Tela cheia, tema Claro" width="100%"> | <img src="screenshots/fullscreen-siri.png" alt="Tela cheia, tema Siri" width="100%"> |
 
 | Escuro | OLED |
 |---|---|
@@ -110,7 +124,7 @@ Aperte a **tecla Windows** (ou clique em **Iniciar**) e digite, ou escolha o que
 ### Siri original (padrão)
 Uma barra de pesquisa no estilo do macOS 27.
 
-- **Menu de categorias**: passe o mouse sobre a barra (ou clique nela) e desce um menu com **Aplicativos**, **Arquivos**, **Ações** e **Área de transferência**, cada um com seu ícone e seu atalho de teclado (padrão **Ctrl+1 … Ctrl+4**, configurável).
+- **Menu de categorias**: passe o mouse sobre a barra (ou clique nela) e desce um menu com **Aplicativos**, **Arquivos**, **Ações**, **Área de transferência** e, quando ligado, **Celular**, cada um com seu ícone e seu atalho de teclado (padrão **Ctrl+1 … Ctrl+5**, configurável).
 - **Pesquisa geral**: digite direto em "Pesquisar" e uma lista mostra **Aplicativos**, **Ações**, **Pastas** e **Documentos e arquivos** juntos, cada grupo com seu título (os melhores resultados e os apps mais usados primeiro). Os apps aparecem na hora; pastas e arquivos chegam um instante depois, embaixo deles, para nada mudar de lugar quando você vai clicar. **Mostrar todos** ao lado de um título abre aquela categoria com o que você digitou; **Enter** abre o primeiro resultado. A área de transferência nunca entra. Apagar o texto volta à barra "Pesquisar" simples. Dá para desligar (*Pesquisa → Digitar em Pesquisar procura em tudo*): aí digitar vai para Aplicativos.
 - **Calculadora**: digite uma conta como *2+2*, *15% * 80* ou *(3+4)^2* e o resultado aparece primeiro, em lista; **Enter** copia. Datas e telefones como *2024-11-04* ou *555-1234* ficam de fora (digite *5 - 3* com espaços, ou comece com **=** ou **calc**, como em *=5-3*, para sempre calcular), e a vírgula ou o ponto decimal seguem a região do Windows. Dá para desligar (*Pesquisa → Calculadora*).
 - Escolher uma categoria faz o ícone e o nome dela deslizarem do menu para a barra, e a pesquisa passa a valer só dentro dela.
@@ -165,11 +179,19 @@ A grade clássica do Launchpad com páginas ou rolagem vertical, pastas e um bot
 - **Ícones personalizados**: coloque suas imagens de ícones numa pasta (por exemplo, um pacote de ícones baixado) e clique direito num app → **Alterar ícone...** Na primeira vez, o menu pede essa pasta (dá para trocar depois em *Apps e ícones → Pasta da galeria de ícones*). As imagens da pasta (PNG, JPG, JPEG, BMP, ICO, GIF ou WebP, subpastas incluídas) aparecem numa grade; digite para buscar pelo nome, ou use os pontos de cor para ver uma cor só ou colocar em ordem de arco-íris. Imagens novas na pasta aparecem na próxima vez que ela abrir. O novo ícone é lembrado depois de reiniciar; **Redefinir ícone** volta o original. Funciona em todos os modos, inclusive em apps dentro de pastas.
 - Tamanho dos ícones, número de colunas e direção da rolagem são configuráveis.
 
+## Celular (Vincular ao Celular)
+- Desligada por padrão: ligue na seção *Celular* do painel de configurações. Só aparece quando o **Vincular ao Celular** do Windows está instalado e há um celular vinculado.
+- **Siri original**: *Celular* no menu de categorias, abaixo de *Área de transferência* (**Ctrl+5**, configurável). **Flutuante, Janela e Tela cheia**: uma aba *Celular* ao lado de *Área de transferência*.
+- **Seu celular**: foto, nome, conexão, Bluetooth e bateria, como o Vincular ao Celular mostra no Iniciar. Um clique abre a tela do celular.
+- **Notificações**: todas as notificações que o Vincular ao Celular tem do celular, da mais nova para a mais antiga, com o ícone do app, quem mandou ou o título, o que diz e quando. As novas aparecem sozinhas enquanto a categoria está aberta. Um clique abre aquele app na tela do celular. Cada uma tem um **×** para tirá-la da lista, e **Limpar tudo** limpa as que estão à vista (elas continuam no Vincular ao Celular e no celular). *Notificações mostradas* (1 a 10) define quantas cabem na caixa; quando há mais, a roda do mouse rola por elas dentro da caixa, e o resto do menu fica parado.
+- **Recursos**: Mensagens, Chamadas, Fotos e Enviar arquivos abrem no Vincular ao Celular, além de *Abrir Vincular ao Celular* e *Abrir tela do telefone*.
+- Como funciona: lê, só neste PC, o cartão que o Vincular ao Celular mantém para o Iniciar e uma cópia temporária da lista de notificações dele, apagada logo depois da leitura. Nada é alterado no Vincular ao Celular e nada é enviado a lugar nenhum. Responder a uma notificação não é possível daqui: o Vincular ao Celular não oferece um jeito de outros programas enviarem.
+
 ## Painel de configurações
 - Clique no botão **⋯** no fim da barra (em todos os modos). Uma janela no estilo dos Ajustes do Sistema do macOS nasce da barra: as seções à esquerda, com um campo de pesquisa no topo, e as configurações da seção escolhida à direita. Toda mudança vale na hora.
-- Seções: **Geral**, **Aparência**, **Tema personalizado**, **Pesquisa** (pesquisa geral, Arquivos e Área de transferência), **Barra Siri**, **Tamanho dos resultados**, **Janela e Tela cheia**, **Animações**, **Atalhos de teclado**, **Apps e ícones**, **Desempenho** e **Backup e padrões**. Cada configuração tem uma linha curta dizendo o que faz, e as que não valem para o que você escolheu (o modo, o tema, o estilo do vidro ou um interruptor de que dependem) ficam apagadas, dizem o motivo e não podem ser alteradas até valerem.
+- Seções: **Geral** (modo, idioma, como abre), **Aparência** (o tema e, logo abaixo, tudo o que é dele), **Pesquisa** (pesquisa geral, Arquivos e Área de transferência), **Celular** (Vincular ao Celular), **Atalhos de teclado** (Siri original), **Apps e ícones**, **Desempenho** e **Backup e padrões** (também a aparência da janela de configurações: a do tema, ou um vidro claro ou escuro próprio). A parte abaixo do tema (*Personalizar tema*) reúne tudo o que é do tema e do modo escolhidos: o visual, o vidro, os menus e, conforme o modo, a Barra Siri e o tamanho dos resultados, ou a janela, além das animações. Cada tema guarda os seus valores, e o que o tema ou o modo não usa fica oculto. Todo ajuste tem uma linha curta dizendo o que faz; o que depende de um interruptor ou do modo de desempenho Leve fica cinza e diz o motivo.
 - O que você muda ali fica por cima das configurações do Windhawk, e uma mudança feita depois no Windhawk volta a valer.
-- **Padrão do tema** (Aparência) traz de volta o visual próprio do tema escolhido. **Restaurar todos os padrões** volta todas as configurações ao que o mod traz e a barra ao centro; pastas, abas e ícones personalizados ficam.
+- **Restaurar tema padrão** (Aparência) esquece o que você mudou no tema escolhido. **Restaurar todos os padrões** volta todas as configurações de todos os temas ao que o mod traz e a barra ao centro; pastas, abas e ícones personalizados ficam.
 - **Fazer backup** salva tudo num arquivo `.siribackup`: todas as configurações (inclusive a pasta da galeria de ícones), pastas, abas, histórico de pesquisas, o lugar da barra e os ícones personalizados, com as imagens dentro do arquivo. **Restaurar backup** traz tudo de volta, também depois de desinstalar o mod (o que apaga os dados guardados) ou em outro PC.
 - **Concluído** (ou **Esc**) fecha: a janela se apaga no lugar, como uma TV antiga (CRT), e o menu fecha; um modo ou tamanho de barra novo aparece na próxima vez que abrir. No modo de desempenho Leve, a janela abre sem o conteúdo entrar parte por parte.
 
@@ -185,18 +207,18 @@ Todas as opções estão no painel **⋯** (em sete idiomas) e na aba **Configur
 
 | Bloco | Opções |
 |---|---|
-| ① Modo | Siri original (padrão), Flutuante, Janela, Tela cheia |
-| ② Tema | Vidro transparente, Vidro líquido personalizado, Claro, Escuro, OLED, Siri (gradiente do macOS 27), Personalizado |
+| ① Modo | Siri original (padrão), Flutuante, Janela, Tela cheia; Flutuante: abrir a caixa de resultados ao clicar ou ao passar o mouse |
+| ② Tema | Vidro, Vidro líquido, Vidro personalizado, Claro, Siri (degradê do macOS 27), Escuro, OLED |
 | Idioma | Automático (Windows) ou English, Português, Español, Français, Deutsch, Italiano, 中文（简体） |
 | Desempenho | **Leve (mais rápido)** funciona com qualquer tema e foi feito para que PCs menos potentes aproveitem o mod com fluidez: desliga o vidro líquido, o desfoque ao vivo, o desfoque atrás dos menus e as sombras, limita a 60 quadros por segundo e deixa as animações mais calmas; um limite de quadros (automático, 120, 60 ou 30); e *Desenhar com*: a placa de vídeo (padrão) ou o processador (experimental, para notebooks com duas placas de vídeo) |
-| ③ Aparência | Botão Padrão do tema, transparência do vidro (cada tema guarda a sua; Claro e OLED começam sólidos), arredondamento dos cantos, desfoque do fundo (0 = sem desfoque), desfoque atrás dos menus de clique direito, cor do texto (automática: no vidro transparente, preto sobre fundos claros; ou branco ou preto), estilo do vidro (vidro translúcido com desfoque ao vivo, ou vidro líquido no Flutuante e no Siri original, com a força da refração e um modo ao vivo opcional), efeito vidro no Claro/Escuro/OLED |
-| ④ Tema personalizado | Cor, opacidade, degradê escuro → claro, espessura, cor e opacidade da borda |
-| ⑤ Janela e Tela cheia | Tamanho da janela, estilo da pesquisa (barra no topo ou caixa centralizada), botão de energia e sua posição, animações de abertura e fechamento (surgir, esmaecer, subir da/descer até a barra de tarefas, CRT), velocidade das animações, desfoque atrás das pastas abertas |
-| ⑥ Flutuante e Siri original | Tamanho da barra (96 px de altura por padrão), largura e linhas da caixa de resultados de cada categoria (Arquivos e Área de transferência da largura da barra por padrão), animação do círculo (onda Siri, brilho suave, nenhuma), zoom do círculo, quique do círculo e da caixa de resultados, duração da abertura e do fechamento, velocidade das animações, pesquisa geral ao digitar, opções de energia ao digitar, botão de energia flutuante (desligado por padrão) e seu lado (esquerda ou direita da barra), primeira linha (recentes, mais usados, desligada), atalhos das categorias do Siri original para Aplicativos, Arquivos, Ações e Área de transferência (padrão **Ctrl+1**, **Ctrl+2**, **Ctrl+3**, **Ctrl+4**; qualquer combinação começando com Ctrl, por exemplo Ctrl+Shift+F ou Ctrl+F2), e se também funcionam com o menu fechado (desligado por padrão) |
-| ⑦ Abertura | Abrir com a tecla Windows e/ou o botão Iniciar |
-| ⑧ Apps e ícones | Tamanho dos ícones, colunas, direção da rolagem, tremer, arrastar até a barra de tarefas para fixar, pasta da galeria de ícones |
-| ⑨ Arquivos | Liga/desliga, histórico de pesquisas, lista ou ícones, indexador, máximo de resultados |
-| ⑩ Área de transferência | Liga/desliga, número de itens guardados, por quanto tempo uma cópia fica |
+| ③ Aparência (como todo tema começa) | Transparência do vidro (Claro e OLED começam sólidos), arredondamento dos cantos, desfoque do fundo (0 = sem desfoque), desfoque atrás dos menus de clique direito, cor do texto (automática: no Vidro líquido, preto sobre fundos claros; ou branco ou preto), refração nas bordas (0 = sem curvatura; o Vidro nunca curva) com modo ao vivo opcional, seleção nos menus (vidro, colorida, fosca ou duas cores misturadas) e suas cores, efeito vidro em Claro/Escuro/OLED, botões de vidro, anel cromado no botão de configurações, borda cromada animada, retroiluminação animada (intensidade, 1 a 5 cores), cor, força e alcance do Vidro personalizado. No painel ⋯, *Personalizar tema* guarda esses ajustes, os da barra, da janela e das animações para cada tema |
+| ④ Janela e Tela cheia | Tamanho da janela, estilo da pesquisa (barra no topo ou caixa centralizada), botão de energia e sua posição, animações de abertura e fechamento (surgir, esmaecer, subir da/descer até a barra de tarefas, CRT), velocidade das animações, desfoque atrás das pastas abertas |
+| ⑤ Flutuante e Siri original | Tamanho da barra (96 px de altura por padrão), largura e linhas da caixa de resultados de cada categoria (Arquivos e Área de transferência da largura da barra por padrão), animação do círculo (onda Siri, brilho suave, nenhuma), zoom do círculo, quique do círculo e da caixa de resultados, duração da abertura e do fechamento, velocidade das animações, pesquisa geral ao digitar, opções de energia ao digitar, botão de energia flutuante (desligado por padrão) e seu lado (esquerda ou direita da barra), primeira linha (recentes, mais usados, desligada), atalhos das categorias do Siri original para Aplicativos, Arquivos, Ações, Área de transferência e Celular (padrão **Ctrl+1**, **Ctrl+2**, **Ctrl+3**, **Ctrl+4**, **Ctrl+5**; qualquer combinação começando com Ctrl, por exemplo Ctrl+Shift+F ou Ctrl+F2), e se também funcionam com o menu fechado (desligado por padrão) |
+| ⑥ Abertura | Abrir com a tecla Windows e/ou o botão Iniciar |
+| ⑦ Apps e ícones | Tamanho dos ícones, colunas, direção da rolagem, tremer, arrastar até a barra de tarefas para fixar, pasta da galeria de ícones |
+| ⑧ Arquivos | Liga/desliga, histórico de pesquisas, lista ou ícones, indexador, máximo de resultados |
+| ⑨ Área de transferência | Liga/desliga, número de itens guardados, por quanto tempo uma cópia fica |
+| ⑩ Celular | Liga/desliga (desligado por padrão), notificações mostradas (1 a 10) |
 
 ---
 
@@ -206,7 +228,7 @@ Todas as opções estão no painel **⋯** (em sete idiomas) e na aba **Configur
 |---|---|
 | **Win** / botão Iniciar | Abre ou fecha |
 | Digitar | Pesquisa (no Siri original, digitar direto procura apps, ações, pastas e arquivos juntos) |
-| **Ctrl+1 / 2 / 3 / 4** | Siri original: vai para Aplicativos / Arquivos / Ações / Área de transferência (configurável). Com *Também com o menu fechado* ligado (desligado por padrão), abrem o menu de qualquer programa, e os outros programas deixam de receber essas teclas |
+| **Ctrl+1 / 2 / 3 / 4 / 5** | Siri original: vai para Aplicativos / Arquivos / Ações / Área de transferência / Celular (configurável). Com *Também com o menu fechado* ligado (desligado por padrão), abrem o menu de qualquer programa, e os outros programas deixam de receber essas teclas |
 | **Tab / Shift+Tab** | Siri original: próxima/anterior aba de apps, ou anda pelos resultados em Arquivos, Área de transferência e Ações |
 | Setas + **Enter** | Anda pelos resultados / abre |
 | Outros **Ctrl+números** | Abrem o resultado correspondente (nunca uma ação como Desligar) |
@@ -226,10 +248,11 @@ Todas as opções estão no painel **⋯** (em sete idiomas) e na aba **Configur
 - O mod nunca acessa a internet.
 - Os arquivos dele (ícones restaurados de um backup, as cores encontradas nas imagens da galeria) ficam na pasta de armazenamento do mod, que o Windhawk apaga junto com o mod. As imagens da galeria só são lidas da pasta que você escolhe; backups só são gravados onde você escolhe. **Criar atalho na área de trabalho** só cria um atalho quando você pede, e nunca substitui um arquivo que já esteja lá.
 - O histórico da área de transferência fica só na memória e nunca é gravado em disco.
+- **Celular** (desligado por padrão): lê o cartão do Iniciar do Vincular ao Celular e uma cópia temporária da lista de notificações dele, só neste PC; a cópia é apagada logo depois da leitura, e nada é alterado nem enviado. As notificações que você limpa são lembradas (só pelo identificador) até o Vincular ao Celular descartá-las.
 
 ## Compatibilidade
 - **Logo depois de uma atualização do Windows**: o Windhawk pode ainda não ter os símbolos dos arquivos novos do Windows, e o mod não consegue colocar o gancho do Iniciar. Ele continua funcionando de um jeito provisório até eles chegarem: a tecla Windows e os cliques no botão Iniciar são capturados diretamente e abrem o launcher como sempre; só Ctrl+Esc ou um toque no botão Iniciar mostra o menu Iniciar do Windows por um instante antes do launcher tomar o lugar. Não é preciso fazer nada; o modo normal volta sozinho na próxima vez que o mod carregar com os símbolos disponíveis.
-- **Atalhos das categorias de qualquer programa** (desligado por padrão): com *Atalhos → Também com o menu fechado* ligado, Ctrl+1 … Ctrl+4 viram teclas de atalho do sistema, e os outros programas deixam de recebê-las (por exemplo, o Ctrl+1 do navegador para a primeira aba). Deixe desligado, ou escolha outras combinações, se precisar dessas teclas em outro lugar.
+- **Atalhos das categorias de qualquer programa** (desligado por padrão): com *Atalhos → Também com o menu fechado* ligado, Ctrl+1 … Ctrl+5 viram teclas de atalho do sistema, e os outros programas deixam de recebê-las (por exemplo, o Ctrl+1 do navegador para a primeira aba). Deixe desligado, ou escolha outras combinações, se precisar dessas teclas em outro lugar.
 - **Fullscreen Start** (`fullscreen-start`): não ative os dois. Cada um substitui o menu Iniciar pelo mesmo gancho sem chamar o original, então só um deles receberia a tecla Windows.
 - **Spotlight Launcher**: ele adiciona uma barra de pesquisa separada no Alt+Espaço e não mexe no menu Iniciar. Este mod substitui o próprio menu Iniciar (tecla Windows e botão Iniciar) e adiciona abas de apps, pastas, arquivos, histórico da área de transferência e ações. Dá para usar os dois juntos.
 

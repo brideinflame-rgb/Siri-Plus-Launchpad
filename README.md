@@ -6,7 +6,7 @@ A [Windhawk](https://windhawk.net) mod that replaces the Windows 11 Start menu w
 
 Press the **Windows key** (or click **Start**) and type, or pick what you want to search from the menu that drops down from the bar.
 
-![Original Siri mode](screenshots/original-siri-v2.gif)
+![Original Siri mode](screenshots/siri-plus-launchpad-1.3.webp)
 
 ---
 
@@ -20,19 +20,33 @@ Press the **Windows key** (or click **Start**) and type, or pick what you want t
 - **App tabs**: All, automatic categories and up to 6 tabs of your own
 - **Recent apps row**: recently opened or installed apps (or the most used ones) on top
 - **Power options**: type *shut down*, *restart*, *sleep*, *lock* or *sign out*, or the floating power button (off by default; turn it on in *Siri bar*)
-- **Keyboard shortcuts**: Ctrl+1 … Ctrl+4 jump to Applications, Files, Actions and Clipboard, and can also open the launcher from any program (optional)
+- **Keyboard shortcuts**: Ctrl+1 … Ctrl+5 jump to Applications, Files, Actions, Clipboard and Phone, and can also open the launcher from any program (optional)
 - **Custom icons**: give any app your own icon from a folder of your icons (such as a downloaded icon pack), with search and a color filter
-- **Themes**: Clear glass, Custom liquid glass (your color at the top, fading to clear glass at the bottom), Light, Dark, OLED (deep black), Siri (macOS 27 gradient) and a fully Custom theme, with an optional glass effect on Light, Dark and OLED
-- **Settings panel**: the **⋯** button at the end of the bar opens every setting in a macOS-style panel, applied live
+- **Themes**: Glass (clear glass, as in the Mac OS 27 Finder Bar, over a live or still blur), Liquid glass (the background bends at the edges), Custom glass (your color at the top, fading to clear glass at the bottom), Light, Dark, OLED (deep black) and Siri (macOS 27 gradient), with an optional glass effect on Light, Dark and OLED, glass buttons, an animated colored backlight and chrome details. **Every theme can be customized** in *Appearance*, right under the theme, keeps its own settings and has a *Restore theme defaults* button
+- **Settings panel**: the **⋯** button at the end of the bar opens every setting in a macOS-style panel, applied live. It only shows what applies to the chosen theme and mode
+- **Phone**: your phone linked in Phone Link, with its battery and its notifications as they arrive (optional, off by default)
 - **Move the bar**: hold the Siri bar and drag it anywhere, on any monitor
 - **Backup**: save settings, folders, tabs and custom icons to one file and restore them, even after reinstalling
 - **Your language**: follows the Windows display language, or pick one (English, Portuguese, Spanish, French, German, Italian and Simplified Chinese)
 
 ---
 
+## What's new in 1.3.0
+
+- **Themes, reorganized**: **Glass** (clear glass, as in the Mac OS 27 Finder Bar), **Liquid glass** (the background bends at the edges) and **Custom glass** (your color at the top), plus Light, Siri, Dark and OLED. Every theme keeps its own customization right under it in *Appearance*, and the panel only shows what applies to the chosen theme and mode.
+- **Clean glass in every mode**: Glass and Liquid glass now blur the picture behind them themselves, in Floating, Original Siri, Window and Fullscreen, so the colors behind stay clean instead of looking smudged. Lowering the transparency adds a thin white veil and a fine bright edge instead of a dark, smoky tint. In Light performance mode the glass is a clean milky white under dark text, or a cool blue-gray under white text.
+- **Glass on Dark and OLED**: with *Glass effect* on, these themes become real dark glass you can see the blur through, with more visible light and edge thickness.
+- **Glass buttons**: buttons, tabs, shortcut keys, menu icons and the settings controls as clear, polished glass (can be turned off).
+- **Animated backlight**: a colored glow around the bar, the results box, the menus and the buttons, with 1 to 5 colors turning around them and an intensity setting (off by default).
+- **Chrome details**: an animated chrome border around the bar, the box and the menus (on by default only on OLED), and a chrome ring on the settings button under the mouse, in every mode. Both can be turned off.
+- **Two-color selection**: menus can highlight the item under the mouse with two blended colors (OLED starts with it).
+- **The settings window's own look**: follow the theme, or a light or dark glass of its own with its own blur and transparency, in *Backup and defaults*.
+- **Floating mode**: the results box can open just by resting the mouse on the bar, and Files and Clipboard stay open with nothing typed (recent searches, copied items, or a line saying there are none yet).
+- **Phone category (Phone Link, off by default)**: turn it on in the settings panel's *Phone* section to see your linked phone (battery and connection), its notifications as they arrive with what they say, and shortcuts to Messages, Calls, Photos and Send files. Clear notifications one by one or all at once; when the phone has more than the box shows, they scroll inside it. **Ctrl+5** opens it in Original Siri. See *Phone* below.
+
 ## What's new in 1.2.0
 
-- **Custom liquid glass theme**: your color (black to start with) solid at the top, thinning out smoothly into clear glass, with a fine line of light along the bottom edge. Its own settings: color strength at the top, how far down the color goes, the glass color, and the selection color in menus.
+- **Custom glass theme**: your color (black to start with) solid at the top, thinning out smoothly into clear glass, with a fine line of light along the bottom edge. Its own settings: color strength at the top, how far down the color goes, the glass color, and the selection color in menus.
 - **Stronger refraction**: above 60 % the liquid glass edge gets wider and deeper, like a thick lens. The default is now 70 %.
 - **Liquid glass by default**: glass themes start with the Liquid glass style. *Liquid glass follows the background live* stays off unless you turn it on (while it is on, the launcher does not show in screenshots or recordings). On a slower PC, pick *Light* in Performance.
 - **New apps show up by themselves**: the app list follows installs and removals, from installers and from the Microsoft Store, without turning the mod off and on.
@@ -48,7 +62,7 @@ Press the **Windows key** (or click **Start**) and type, or pick what you want t
 
 ## Performance
 
-- **Light mode works with any theme.** It is made so slower PCs can enjoy the mod smoothly: no liquid glass, no live blur, no blur behind menus, no shadows, at most 60 frames per second and calmer animations. With the Clear glass theme it draws an acrylic-style translucency instead of the live blur.
+- **Light mode works with any theme.** It is made so slower PCs can enjoy the mod smoothly: no liquid glass, no live blur, no blur behind menus, no shadows, at most 60 frames per second and calmer animations. With the Liquid glass theme it draws an acrylic-style translucency instead of the live blur.
 - **Translucent glass is light on the GPU**.
 - **Hover and clicks answer right away**: clear glass areas used to let the mouse through, which made the settings button and the result rows feel slow or skip. Fixed.
 - **Fewer repeated drawing calls**: the blur behind menus and the glass pieces are cached and rebuilt only when needed.
@@ -59,36 +73,36 @@ Press the **Windows key** (or click **Start**) and type, or pick what you want t
 ## Screenshots
 
 ### Original Siri (default)
-| Clear glass | Dark | OLED |
+| Liquid glass | Dark | OLED |
 |---|---|---|
-| <img src="screenshots/original-glass.png" alt="Original Siri, Clear glass theme" width="100%"> | <img src="screenshots/original-dark.png" alt="Original Siri, Dark theme" width="100%"> | <img src="screenshots/original-oled.png" alt="Original Siri, OLED theme" width="100%"> |
+| <img src="screenshots/original-glass.png" alt="Original Siri, Liquid glass theme" width="100%"> | <img src="screenshots/original-dark.png" alt="Original Siri, Dark theme" width="100%"> | <img src="screenshots/original-oled.png" alt="Original Siri, OLED theme" width="100%"> |
 
-| Custom liquid glass |
+| Custom glass |
 |---|
-| <img src="screenshots/original-custom-liquid.png" alt="Original Siri, Custom liquid glass theme" width="60%"> |
+| <img src="screenshots/original-custom-liquid.png" alt="Original Siri, Custom glass theme" width="60%"> |
 
 ### Floating
-| Clear glass | Light | Siri gradient |
+| Liquid glass | Light | Siri gradient |
 |---|---|---|
-| <img src="screenshots/floating-glass.png" alt="Floating, Clear glass theme" width="100%"> | <img src="screenshots/floating-light.png" alt="Floating, Light theme" width="100%"> | <img src="screenshots/floating-siri.png" alt="Floating, Siri theme" width="100%"> |
+| <img src="screenshots/floating-glass.png" alt="Floating, Liquid glass theme" width="100%"> | <img src="screenshots/floating-light.png" alt="Floating, Light theme" width="100%"> | <img src="screenshots/floating-siri.png" alt="Floating, Siri theme" width="100%"> |
 
 | Dark | OLED |
 |---|---|
 | <img src="screenshots/floating-dark.png" alt="Floating, Dark theme" width="100%"> | <img src="screenshots/floating-oled.png" alt="Floating, OLED theme" width="100%"> |
 
 ### Window
-| Clear glass | Light | Siri gradient |
+| Liquid glass | Light | Siri gradient |
 |---|---|---|
-| <img src="screenshots/window-glass.png" alt="Window, Clear glass theme" width="100%"> | <img src="screenshots/window-light.png" alt="Window, Light theme" width="100%"> | <img src="screenshots/window-siri.png" alt="Window, Siri theme" width="100%"> |
+| <img src="screenshots/window-glass.png" alt="Window, Liquid glass theme" width="100%"> | <img src="screenshots/window-light.png" alt="Window, Light theme" width="100%"> | <img src="screenshots/window-siri.png" alt="Window, Siri theme" width="100%"> |
 
 | Dark | OLED |
 |---|---|
 | <img src="screenshots/window-dark.png" alt="Window, Dark theme" width="100%"> | <img src="screenshots/window-oled.png" alt="Window, OLED theme" width="100%"> |
 
 ### Fullscreen
-| Clear glass | Light | Siri gradient |
+| Liquid glass | Light | Siri gradient |
 |---|---|---|
-| <img src="screenshots/fullscreen-glass.png" alt="Fullscreen, Clear glass theme" width="100%"> | <img src="screenshots/fullscreen-light.png" alt="Fullscreen, Light theme" width="100%"> | <img src="screenshots/fullscreen-siri.png" alt="Fullscreen, Siri theme" width="100%"> |
+| <img src="screenshots/fullscreen-glass.png" alt="Fullscreen, Liquid glass theme" width="100%"> | <img src="screenshots/fullscreen-light.png" alt="Fullscreen, Light theme" width="100%"> | <img src="screenshots/fullscreen-siri.png" alt="Fullscreen, Siri theme" width="100%"> |
 
 | Dark | OLED |
 |---|---|
@@ -110,7 +124,7 @@ Press the **Windows key** (or click **Start**) and type, or pick what you want t
 ### Original Siri (default)
 A search bar in the macOS 27 style.
 
-- **Categories menu**: hover over the bar (or click it) and a menu drops down with **Applications**, **Files**, **Actions** and **Clipboard**, each with its icon and its keyboard shortcut (default **Ctrl+1 … Ctrl+4**, configurable).
+- **Categories menu**: hover over the bar (or click it) and a menu drops down with **Applications**, **Files**, **Actions**, **Clipboard** and, when turned on, **Phone**, each with its icon and its keyboard shortcut (default **Ctrl+1 … Ctrl+5**, configurable).
 - **Search everything**: type straight away in "Search" and one list shows **Applications**, **Actions**, **Folders** and **Documents and files** together, each under its title (the best matches and the most used apps first). Apps show up at once; folders and files come in a moment later, below them, so nothing you are about to click moves. **Show all** next to a title opens that category with what you typed; **Enter** opens the first result. The clipboard is never part of it. Erasing the text brings back the plain "Search" bar. It can be turned off (*Siri bar → Typing in Search looks everywhere*): then typing goes to Applications.
 - **Calculator**: type a calculation such as *2+2*, *15% * 80* or *(3+4)^2* and its result shows first, in a list; **Enter** copies it. Dates and phone numbers such as *2024-11-04* or *555-1234* are left alone (type *5 - 3* with spaces, or start with **=** or **calc**, as in *=5-3*, to always calculate), and the decimal mark follows Windows' region settings. It can be turned off (*Search → Calculator*).
 - Picking a category makes its icon and name glide from the menu into the bar, and the search then works only inside that category.
@@ -165,11 +179,19 @@ The classic Launchpad grid with pages or vertical scrolling, folders and a power
 - **Custom icons**: put your icon images in a folder (for example a downloaded icon pack), then right-click an app → **Change icon...** The first time, the launcher asks for that folder (it can be changed later in *Apps and icons → Icon gallery folder*). The folder's images (PNG, JPG, JPEG, BMP, ICO, GIF or WebP, subfolders included) show in a grid; type to search them by name, or use the color dots to see only one color or put them in rainbow order. Images added to the folder show up the next time it opens. The new icon is remembered across restarts; **Reset icon** brings back the original. Works in every mode, including apps inside folders.
 - Icon size, number of columns and the scrolling direction are configurable.
 
+## Phone (Phone Link)
+- Off by default: turn it on in the settings panel's *Phone* section. It shows up only when Windows' **Phone Link** is installed and a phone is linked.
+- **Original Siri**: *Phone* in the categories menu, under *Clipboard* (**Ctrl+5**, configurable). **Floating, Window and Fullscreen**: a *Phone* tab next to *Clipboard*.
+- **Your phone**: its picture, name, connection, Bluetooth and battery, as Phone Link shows them in Start. A click opens the phone's screen.
+- **Notifications**: every notification Phone Link has from the phone, newest first, with the app's icon, who sent it or its title, what it says and when. New ones show up by themselves while the category is open. A click opens that app on the phone's screen. Each one has an **×** to clear it from the list, and **Clear all** clears what is shown (they stay in Phone Link and on the phone). *Notifications shown* (1 to 10) sets how many fit in the box; when there are more, the mouse wheel scrolls through them inside the box, and the rest of the menu stays put.
+- **Features**: Messages, Calls, Photos and Send files open in Phone Link, plus *Open Phone Link* and *Open phone screen*.
+- How it works: it reads, on this PC only, the card Phone Link keeps for Start and a temporary copy of Phone Link's notifications list, deleted right after reading. Nothing is changed in Phone Link and nothing is sent anywhere. Answering a notification is not possible from here: Phone Link offers no way for other programs to send.
+
 ## Settings panel
 - Click the **⋯** button at the end of the bar (every mode). A window in the style of macOS System Settings grows out of the bar: the sections on the left, with a search field on top, and the settings of the chosen section on the right. Every change applies at once.
-- Sections: **General**, **Appearance**, **Custom theme**, **Search** (search everything, Files and Clipboard), **Siri bar**, **Results size**, **Window and Fullscreen**, **Animations**, **Keyboard shortcuts**, **Apps and icons**, **Performance** and **Backup and defaults**. Every setting has a short line saying what it does, and the ones that don't apply to what you chose (the mode, the theme, the glass style or a switch they depend on) are dimmed, say why and can't be changed until they do.
+- Sections: **General** (mode, language, how it opens), **Appearance** (the theme and, right under it, everything of its own), **Search** (search everything, Files and Clipboard), **Phone** (Phone Link), **Keyboard shortcuts** (Original Siri), **Apps and icons**, **Performance** and **Backup and defaults** (also the look of the settings window: the theme's, or a light or dark glass of its own). The part under the theme (*Customize theme*) holds everything that belongs to the chosen theme and mode: the look, the glass, the menus and, for the chosen mode, the Siri bar and the size of its results, or the window, plus the animations. Each theme keeps its own values, and what the theme or the mode doesn't use is hidden. Every setting has a short line saying what it does; one that depends on a switch or on Light performance mode is dimmed and says why.
 - Changes made there are kept on top of Windhawk's settings, and a change made later in Windhawk wins again.
-- **Theme defaults** (Appearance) brings back the chosen theme's own look. **Restore all defaults** puts every setting back to how the mod comes and the bar back in the center; folders, tabs and custom icons stay.
+- **Restore theme defaults** (Appearance) forgets what you changed in the chosen theme. **Restore all defaults** puts every setting of every theme back to how the mod comes and the bar back in the center; folders, tabs and custom icons stay.
 - **Back up** saves everything to a `.siribackup` file: every setting (the icon gallery folder too), folders, tabs, search history, the bar's place and the custom icons, with their pictures inside the file. **Restore a backup** brings it all back, also after uninstalling the mod (which erases its stored data) or on another PC.
 - **Done** (or **Esc**) closes it: the window switches off where it is, like an old TV (CRT), and the launcher closes; a new mode or bar size shows the next time it opens. In Light performance mode the window opens without its content coming in one piece at a time.
 
@@ -185,18 +207,18 @@ All options are in the **⋯** settings panel (in seven languages) and in the mo
 
 | Block | Options |
 |---|---|
-| ① Mode | Original Siri (default), Floating, Window, Fullscreen |
-| ② Theme | Clear glass, Custom liquid glass, Light, Dark, OLED, Siri (macOS 27 gradient), Custom |
+| ① Mode | Original Siri (default), Floating, Window, Fullscreen; Floating: open the results box on click or on mouse over |
+| ② Theme | Glass, Liquid glass, Custom glass, Light, Siri (macOS 27 gradient), Dark, OLED |
 | Language | Automatic (Windows) or English, Português, Español, Français, Deutsch, Italiano, 中文（简体） |
 | Performance | **Light (faster)** works with any theme and is made so slower PCs can enjoy the mod smoothly: it turns off liquid glass, the live blur, the blur behind menus and the shadows, keeps it to 60 frames per second and calms the animations; a frame rate limit (automatic, 120, 60 or 30); and *Draw with*: the graphics card (default) or the processor (experimental, for laptops with two graphics cards) |
-| ③ Appearance | Theme defaults button, glass transparency (each theme keeps its own; Light and OLED start solid), corner rounding, background blur (0 = no blur), blur behind right-click menus, text color (automatic: on clear glass, black over light backgrounds; or white or black), glass style (translucent glass with a live blur, or liquid glass for Floating and Original Siri, with its refraction strength and an optional live mode), glass effect on Light/Dark/OLED |
-| ④ Custom theme | Color, opacity, dark-to-light gradient, border width, color and opacity |
-| ⑤ Window and Fullscreen | Window size, search style (top bar or centered box), power button and its position, opening and closing animations (pop, fade, rise from/sink into the taskbar, CRT), animation speed, blur behind open folders |
-| ⑥ Floating and Original Siri | Bar size (96 px tall by default), results box width and rows for each category (Files and Clipboard as wide as the bar by default), circle animation (Siri wave, soft glow, none), circle zoom, bounce of the circle and of the results box, opening/closing duration, animation speed, search everything when typing, power options when typing, floating power button (off by default) and its side (left or right of the bar), first row (recent, most used, off), Original Siri category shortcuts for Applications, Files, Actions and Clipboard (defaults **Ctrl+1**, **Ctrl+2**, **Ctrl+3**, **Ctrl+4**; any combination starting with Ctrl, e.g. Ctrl+Shift+F or Ctrl+F2), and whether they also work with the launcher closed (off by default) |
-| ⑦ Opening | Open with the Windows key and/or the Start button |
-| ⑧ Apps and icons | Icon size, columns, scrolling direction, jiggle, drag to the taskbar to pin, icon gallery folder |
-| ⑨ Files | On/off, search history, list or icons, indexer, maximum results |
-| ⑩ Clipboard | On/off, number of items kept, how long a copy stays |
+| ③ Appearance (how every theme starts) | Glass transparency (Light and OLED start solid), corner rounding, background blur (0 = no blur), blur behind right-click menus, text color (automatic: on Liquid glass, black over light backgrounds; or white or black), refraction at the edges (0 = no bending; Glass never bends) with an optional live mode, selection in menus (glass, colored, frosted or two colors blended) and its colors, glass effect on Light/Dark/OLED, glass buttons, chrome ring on the settings button, animated chrome border, animated backlight (intensity, 1 to 5 colors), the Custom glass color, strength and reach. In the ⋯ panel, *Customize theme* keeps these, the bar, window and animation settings for each theme |
+| ④ Window and Fullscreen | Window size, search style (top bar or centered box), power button and its position, opening and closing animations (pop, fade, rise from/sink into the taskbar, CRT), animation speed, blur behind open folders |
+| ⑤ Floating and Original Siri | Bar size (96 px tall by default), results box width and rows for each category (Files and Clipboard as wide as the bar by default), circle animation (Siri wave, soft glow, none), circle zoom, bounce of the circle and of the results box, opening/closing duration, animation speed, search everything when typing, power options when typing, floating power button (off by default) and its side (left or right of the bar), first row (recent, most used, off), Original Siri category shortcuts for Applications, Files, Actions, Clipboard and Phone (defaults **Ctrl+1**, **Ctrl+2**, **Ctrl+3**, **Ctrl+4**, **Ctrl+5**; any combination starting with Ctrl, e.g. Ctrl+Shift+F or Ctrl+F2), and whether they also work with the launcher closed (off by default) |
+| ⑥ Opening | Open with the Windows key and/or the Start button |
+| ⑦ Apps and icons | Icon size, columns, scrolling direction, jiggle, drag to the taskbar to pin, icon gallery folder |
+| ⑧ Files | On/off, search history, list or icons, indexer, maximum results |
+| ⑨ Clipboard | On/off, number of items kept, how long a copy stays |
+| ⑩ Phone | On/off (off by default), notifications shown (1 to 10) |
 
 ---
 
@@ -206,7 +228,7 @@ All options are in the **⋯** settings panel (in seven languages) and in the mo
 |---|---|
 | **Win** / Start button | Open or close |
 | Type | Search (in Original Siri, typing right away searches apps, actions, folders and files together) |
-| **Ctrl+1 / 2 / 3 / 4** | Original Siri: go to Applications / Files / Actions / Clipboard (configurable). With *Also with the launcher closed* on (off by default) they open the launcher from any program, and other programs no longer get those keys |
+| **Ctrl+1 / 2 / 3 / 4 / 5** | Original Siri: go to Applications / Files / Actions / Clipboard / Phone (configurable). With *Also with the launcher closed* on (off by default) they open the launcher from any program, and other programs no longer get those keys |
 | **Tab / Shift+Tab** | Original Siri: next/previous app tab, or move through the results in Files, Clipboard and Actions |
 | Arrows + **Enter** | Move through results / open |
 | Other **Ctrl+digits** | Launch the matching result (never an action such as Shut down) |
@@ -226,10 +248,11 @@ All options are in the **⋯** settings panel (in seven languages) and in the mo
 - The mod never goes online.
 - Its own files (icons restored from a backup, the colors found for the gallery's images) are kept in the mod's storage folder, which Windhawk removes together with the mod. The gallery's images are only read from the folder you choose; backups are written only where you choose. **Create desktop shortcut** adds a shortcut to your desktop only when you pick it, and never replaces a file already there.
 - The clipboard history lives in memory only and is never written to disk.
+- **Phone** (off by default): reads Phone Link's Start card and a temporary copy of its notifications list, on this PC only; the copy is deleted right after reading, and nothing is changed or sent. Notifications you clear are remembered (by their id only) until Phone Link drops them.
 
 ## Compatibility
 - **Right after a Windows update**: Windhawk may not have the symbols for the new Windows files yet, and the mod can't place its Start hook. It keeps working in a temporary way until they arrive: the Windows key and clicks on the Start button are caught directly and open the launcher as always; only Ctrl+Esc or a touch on the Start button shows Windows' own Start menu for a moment before the launcher takes its place. Nothing needs to be done; the normal way comes back by itself the next time the mod loads with the symbols available.
-- **Category shortcuts from any program** (off by default): when *Shortcuts → Also with the launcher closed* is on, Ctrl+1 … Ctrl+4 are registered as system hotkeys, so other programs no longer get them (for example, the browser's Ctrl+1 for the first tab). Leave it off, or pick other combinations, if you need those keys elsewhere.
+- **Category shortcuts from any program** (off by default): when *Shortcuts → Also with the launcher closed* is on, Ctrl+1 … Ctrl+5 are registered as system hotkeys, so other programs no longer get them (for example, the browser's Ctrl+1 for the first tab). Leave it off, or pick other combinations, if you need those keys elsewhere.
 - **Fullscreen Start** (`fullscreen-start`): don't enable both. Each one replaces the Start menu through the same hook without calling the original, so only one of them would get the Windows key.
 - **Spotlight Launcher**: it adds a separate search bar on Alt+Space and leaves the Start menu alone. This mod replaces the Start menu itself (Windows key and Start button) and adds app tabs, folders, files, clipboard history and actions. Both can be used together.
 
