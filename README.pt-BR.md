@@ -15,9 +15,10 @@ Aperte a **tecla Windows** (ou clique em **Iniciar**) e digite, ou escolha o que
 - **Quatro modos**: Siri original (padrão), Flutuante, Janela e Tela cheia
 - **Vidro ao vivo**: desfoque em tempo real atrás da barra e dos painéis (papéis de parede animados e vídeos continuam rodando por baixo), além de um vidro líquido com refração nos modos Siri
 - **Pesquise tudo de uma vez**: digite na barra e apps, ações, pastas e arquivos aparecem juntos numa lista, como no Spotlight ou no Flow Launcher, ou escolha uma categoria (Apps, Arquivos, Ações, Área de transferência) para pesquisar só nela
+- **Acentos não atrapalham**: *acao* encontra *ação* e vice-versa (dá para desligar)
 - **Calculadora**: digite uma conta e o resultado aparece primeiro; Enter copia
 - **Configurações do Windows**: digite *tela*, *aplicativos de inicialização*, *atualização*, *wi-fi*... e a página de Configurações correspondente abre
-- **Abas de apps**: Todos, categorias automáticas e até 6 abas suas
+- **Abas de apps**: Todos, categorias automáticas e até 6 abas suas (Siri original e Flutuante)
 - **Linha de apps recentes**: apps abertos ou instalados por último (ou os mais usados) no topo
 - **Opções de energia**: digite *desligar*, *reiniciar*, *suspender*, *bloquear* ou *sair*, ou use o botão de energia flutuante (desligado por padrão; ligue em *Barra Siri*)
 - **Atalhos de teclado**: Ctrl+1 … Ctrl+5 levam a Aplicativos, Arquivos, Ações, Área de transferência e Celular, e também podem abrir o menu de qualquer programa (opcional)
@@ -38,10 +39,14 @@ Aperte a **tecla Windows** (ou clique em **Iniciar**) e digite, ou escolha o que
 - **Vidro no Escuro e no OLED**: com o *Efeito vidro* ligado, esses temas viram um vidro escuro de verdade, com o desfoque aparecendo através, mais brilho e espessura nas bordas.
 - **Botões de vidro**: botões, abas, teclas de atalho, ícones dos menus e os controles das configurações em vidro límpido e polido (dá para desligar).
 - **Retroiluminação animada**: um brilho colorido em volta da barra, da caixa de resultados, dos menus e dos botões, com 1 a 5 cores girando em volta e ajuste de intensidade (desligada por padrão).
-- **Detalhes cromados**: uma borda cromada animada em volta da barra, da caixa e dos menus (ligada por padrão só no OLED) e um anel cromado no botão de configurações com o mouse em cima, em todos os modos. Os dois podem ser desligados.
-- **Seleção em duas cores**: os menus podem destacar o item sob o mouse com duas cores misturadas (o OLED começa assim).
+- **Detalhes cromados**: uma borda cromada animada em volta da barra, da caixa e dos menus (ligada por padrão só no OLED) e um anel cromado no botão de configurações com o mouse em cima, em todos os modos e todos os temas (em superfícies claras o metal fica grafite para continuar aparecendo; a Tela cheia também ganha a borda). Os dois podem ser desligados.
+- **Todas as seleções em todos os temas**: Vidro, Colorida, Cor fosca e Duas cores misturadas, com as suas cores, agora podem ser escolhidas em qualquer tema (antes só Vidro, Vidro líquido, Vidro personalizado e OLED tinham). O OLED começa com duas cores misturadas.
+- **OLED começa preto profundo**: sem efeito vidro e sem retroiluminação até você ligar.
+- **Os resultados da pesquisa seguem a seleção dos menus**: o resultado sob o mouse e o que o Enter abre usam a seleção que você escolheu para os menus (Colorida, Cor fosca ou Duas cores), em vez de um véu apagado; com a seleção Vidro, eles acendem como vidro límpido.
+- **Tamanho do texto dos resultados**: de 80 % a 160 %, em *Apps e ícones*; as linhas crescem com o texto maior.
 - **Visual próprio da janela de configurações**: seguir o tema, ou um vidro claro ou escuro só dela, com desfoque e transparência próprios, em *Backup e padrões*.
-- **Modo Flutuante**: a caixa de resultados pode abrir só de passar o mouse sobre a barra, e Arquivos e Área de transferência ficam abertos sem nada digitado (pesquisas recentes, itens copiados, ou um aviso de que ainda não há nenhum).
+- **Modo Flutuante**: a caixa de resultados pode abrir só de passar o mouse sobre a barra, e Arquivos e Área de transferência ficam abertos sem nada digitado (pesquisas recentes, itens copiados, ou um aviso de que ainda não há nenhum). Aplicativos agora tem as abas de apps (Todos, as categorias e as suas abas) numa linha embaixo das categorias, e a primeira linha com os apps recentes ou mais usados.
+- **A pesquisa ignora acentos**: *acao* também encontra *ação*, e vice-versa, em apps, arquivos, ações e nas outras categorias. Ligado por padrão; dá para desligar em *Pesquisa*.
 - **Categoria Celular (Vincular ao Celular, desligada por padrão)**: ligue na seção *Celular* do painel de configurações para ver o seu celular vinculado (bateria e conexão), as notificações chegando com o que dizem e atalhos para Mensagens, Chamadas, Fotos e Enviar arquivos. Limpe as notificações uma a uma ou todas; quando o celular tem mais do que a caixa mostra, elas rolam dentro dela. **Ctrl+5** abre direto no Siri original. Veja *Celular* abaixo.
 
 ## Novidades da 1.2.0
@@ -139,14 +144,14 @@ Uma barra de pesquisa no estilo do macOS 27.
 - **Abrir local do arquivo**: clique com o botão direito em um arquivo ou pasta encontrado na busca e escolha *Abrir local do arquivo* para vê-lo no Explorador de Arquivos, já selecionado.
 
 ### Flutuante
-A barra surge de um círculo animado, a **onda Siri** ou um brilho suave, com zoom e um quique ajustável. Clicar ou digitar faz o painel de resultados descer. Ao fechar, a barra é "sugada" de volta para a bolha. Passe o mouse no ícone da categoria no começo da barra e ele vira uma seta de voltar, como no Siri original: um clique limpa a pesquisa, volta a Aplicativos e fecha o painel de resultados.
+A barra surge de um círculo animado, a **onda Siri** ou um brilho suave, com zoom e um quique ajustável. Clicar ou digitar faz o painel de resultados descer. Ao fechar, a barra é "sugada" de volta para a bolha. Passe o mouse no ícone da categoria no começo da barra e ele vira uma seta de voltar, como no Siri original: um clique limpa a pesquisa, volta a Aplicativos e fecha o painel de resultados. Em Aplicativos, as **abas de apps** (Todos, as categorias e as suas abas) ficam numa linha embaixo das categorias, e a **primeira linha** mostra os apps recentes ou mais usados, como no Siri original.
 
 ### Janela e Tela cheia
 A grade clássica do Launchpad com páginas ou rolagem vertical, pastas e um botão de energia. As páginas sempre deslizam dentro do vidro. A Tela cheia respeita a área de trabalho e o espaço reservado por docks.
 
 ---
 
-## Gerenciando as abas de apps (Siri original)
+## Gerenciando as abas de apps (Siri original e Flutuante)
 
 | O quê | Como |
 |---|---|
@@ -155,7 +160,7 @@ A grade clássica do Launchpad com páginas ou rolagem vertical, pastas e um bot
 | Tirar um app | Dentro de uma aba, clique direito no app → **Remover da aba** |
 | Renomear ou excluir | Clique direito na aba → **Renomear aba** / **Excluir aba** |
 | Abas prontas | Também podem ser editadas (adicionar ou tirar apps) e excluídas. **Restaurar abas padrão** traz de volta |
-| Andar pelas abas | **Tab / Shift+Tab**, ou clique e arraste a faixa para o lado (a roda do mouse também funciona) |
+| Andar pelas abas | **Tab / Shift+Tab** (Siri original), ou clique e arraste a faixa para o lado (a roda do mouse também funciona) |
 
 ---
 
@@ -215,7 +220,8 @@ Todas as opções estão no painel **⋯** (em sete idiomas) e na aba **Configur
 | ④ Janela e Tela cheia | Tamanho da janela, estilo da pesquisa (barra no topo ou caixa centralizada), botão de energia e sua posição, animações de abertura e fechamento (surgir, esmaecer, subir da/descer até a barra de tarefas, CRT), velocidade das animações, desfoque atrás das pastas abertas |
 | ⑤ Flutuante e Siri original | Tamanho da barra (96 px de altura por padrão), largura e linhas da caixa de resultados de cada categoria (Arquivos e Área de transferência da largura da barra por padrão), animação do círculo (onda Siri, brilho suave, nenhuma), zoom do círculo, quique do círculo e da caixa de resultados, duração da abertura e do fechamento, velocidade das animações, pesquisa geral ao digitar, opções de energia ao digitar, botão de energia flutuante (desligado por padrão) e seu lado (esquerda ou direita da barra), primeira linha (recentes, mais usados, desligada), atalhos das categorias do Siri original para Aplicativos, Arquivos, Ações, Área de transferência e Celular (padrão **Ctrl+1**, **Ctrl+2**, **Ctrl+3**, **Ctrl+4**, **Ctrl+5**; qualquer combinação começando com Ctrl, por exemplo Ctrl+Shift+F ou Ctrl+F2), e se também funcionam com o menu fechado (desligado por padrão) |
 | ⑥ Abertura | Abrir com a tecla Windows e/ou o botão Iniciar |
-| ⑦ Apps e ícones | Tamanho dos ícones, colunas, direção da rolagem, tremer, arrastar até a barra de tarefas para fixar, pasta da galeria de ícones |
+| ⑦ Apps e ícones | Tamanho dos ícones, tamanho do texto dos resultados (80 a 160 %), colunas, direção da rolagem, tremer, arrastar até a barra de tarefas para fixar, pasta da galeria de ícones |
+| Pesquisa | Ignorar acentos (ligado por padrão), calculadora |
 | ⑧ Arquivos | Liga/desliga, histórico de pesquisas, lista ou ícones, indexador, máximo de resultados |
 | ⑨ Área de transferência | Liga/desliga, número de itens guardados, por quanto tempo uma cópia fica |
 | ⑩ Celular | Liga/desliga (desligado por padrão), notificações mostradas (1 a 10) |
@@ -234,7 +240,7 @@ Todas as opções estão no painel **⋯** (em sete idiomas) e na aba **Configur
 | Outros **Ctrl+números** | Abrem o resultado correspondente (nunca uma ação como Desligar) |
 | **Esc** | Fecha menus, depois limpa a pesquisa, volta às categorias e por fim fecha |
 | Clique direito na barra de pesquisa | Recortar, Copiar, Colar, Selecionar tudo, Apagar tudo |
-| Segurar um app | Seleciona; depois um clique simples seleciona ou tira mais apps (Janela/Tela cheia: clique direito → **Nova pasta com N itens** coloca numa pasta; Siri original: dentro do seletor de apps) |
+| Segurar um app | Seleciona; depois um clique simples seleciona ou tira mais apps (Janela/Tela cheia: clique direito → **Nova pasta com N itens** coloca numa pasta; Flutuante: clique direito → **Fixar selecionados na barra de tarefas**; Siri original: dentro do seletor de apps) |
 
 ---
 

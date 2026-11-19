@@ -15,9 +15,10 @@ Press the **Windows key** (or click **Start**) and type, or pick what you want t
 - **Four modes**: Original Siri (default), Floating, Window and Fullscreen
 - **Live glass**: real-time blur behind the bar and panels (animated wallpapers and videos keep playing underneath), plus a liquid glass with refraction in the Siri modes
 - **Search everything at once**: type in the bar and apps, actions, folders and files show up together in one list, like Spotlight or Flow Launcher, or pick a category (Apps, Files, Actions, Clipboard) to search only there
+- **Accents don't matter**: *acao* finds *ação* and the other way around (can be turned off)
 - **Calculator**: type a calculation and its result shows first; Enter copies it
 - **Windows Settings**: type *display*, *startup apps*, *update*, *wi-fi*... and the matching Settings page opens
-- **App tabs**: All, automatic categories and up to 6 tabs of your own
+- **App tabs**: All, automatic categories and up to 6 tabs of your own (Original Siri and Floating)
 - **Recent apps row**: recently opened or installed apps (or the most used ones) on top
 - **Power options**: type *shut down*, *restart*, *sleep*, *lock* or *sign out*, or the floating power button (off by default; turn it on in *Siri bar*)
 - **Keyboard shortcuts**: Ctrl+1 … Ctrl+5 jump to Applications, Files, Actions, Clipboard and Phone, and can also open the launcher from any program (optional)
@@ -38,10 +39,14 @@ Press the **Windows key** (or click **Start**) and type, or pick what you want t
 - **Glass on Dark and OLED**: with *Glass effect* on, these themes become real dark glass you can see the blur through, with more visible light and edge thickness.
 - **Glass buttons**: buttons, tabs, shortcut keys, menu icons and the settings controls as clear, polished glass (can be turned off).
 - **Animated backlight**: a colored glow around the bar, the results box, the menus and the buttons, with 1 to 5 colors turning around them and an intensity setting (off by default).
-- **Chrome details**: an animated chrome border around the bar, the box and the menus (on by default only on OLED), and a chrome ring on the settings button under the mouse, in every mode. Both can be turned off.
-- **Two-color selection**: menus can highlight the item under the mouse with two blended colors (OLED starts with it).
+- **Chrome details**: an animated chrome border around the bar, the box and the menus (on by default only on OLED), and a chrome ring on the settings button under the mouse, in every mode and every theme (on light surfaces the metal turns graphite so it still shows; Fullscreen gets it too). Both can be turned off.
+- **Every selection in every theme**: Glass, Colored, Frosted color and Two colors blended, with their colors, can now be chosen on every theme (before, only Glass, Liquid glass, Custom glass and OLED had them). OLED starts with two blended colors.
+- **OLED starts deep black**: no glass effect and no backlight until you turn them on.
+- **Search results follow the menus' selection**: the result under the mouse and the one Enter opens use the selection you chose for the menus (Colored, Frosted color or Two colors), instead of a dim veil; with Glass selection they light up as clear glass.
+- **Text size of the results**: 80 % to 160 %, in *Apps and icons*; the rows grow with bigger text.
 - **The settings window's own look**: follow the theme, or a light or dark glass of its own with its own blur and transparency, in *Backup and defaults*.
-- **Floating mode**: the results box can open just by resting the mouse on the bar, and Files and Clipboard stay open with nothing typed (recent searches, copied items, or a line saying there are none yet).
+- **Floating mode**: the results box can open just by resting the mouse on the bar, and Files and Clipboard stay open with nothing typed (recent searches, copied items, or a line saying there are none yet). Applications now has the app tabs (All, the categories and your own tabs) in a row under the categories, and the first row of recent or most used apps.
+- **Search ignores accents**: *acao* also finds *ação*, and the other way around, in apps, files, actions and the other categories. On by default; it can be turned off in *Search*.
 - **Phone category (Phone Link, off by default)**: turn it on in the settings panel's *Phone* section to see your linked phone (battery and connection), its notifications as they arrive with what they say, and shortcuts to Messages, Calls, Photos and Send files. Clear notifications one by one or all at once; when the phone has more than the box shows, they scroll inside it. **Ctrl+5** opens it in Original Siri. See *Phone* below.
 
 ## What's new in 1.2.0
@@ -139,14 +144,14 @@ A search bar in the macOS 27 style.
 - **Open file location**: right-click a file or folder found by the search and choose *Open file location* to see it in File Explorer, already selected.
 
 ### Floating
-The bar appears out of an animated circle, the **Siri wave** or a soft glow, with zoom and an adjustable bounce. Clicking it or typing slides the results panel down. When it closes, the bar is "sucked" back into the bubble. Hover the category icon at the start of the bar and it turns into a back arrow, as in Original Siri: a click clears the search, goes back to Applications and closes the results panel.
+The bar appears out of an animated circle, the **Siri wave** or a soft glow, with zoom and an adjustable bounce. Clicking it or typing slides the results panel down. When it closes, the bar is "sucked" back into the bubble. Hover the category icon at the start of the bar and it turns into a back arrow, as in Original Siri: a click clears the search, goes back to Applications and closes the results panel. In Applications, the **app tabs** (All, the categories and your own tabs) sit in a row under the categories, and the **first row** shows the recent or most used apps, as in Original Siri.
 
 ### Window and Fullscreen
 The classic Launchpad grid with pages or vertical scrolling, folders and a power button. Pages always slide inside the glass. Fullscreen respects the work area and the space reserved by docks.
 
 ---
 
-## Managing app tabs (Original Siri)
+## Managing app tabs (Original Siri and Floating)
 
 | What | How |
 |---|---|
@@ -155,7 +160,7 @@ The classic Launchpad grid with pages or vertical scrolling, folders and a power
 | Remove an app | Inside a tab, right-click the app → **Remove from tab** |
 | Rename or delete | Right-click the tab → **Rename tab** / **Delete tab** |
 | Built-in tabs | They can also be edited (add or remove apps) and deleted. **Restore default tabs** brings them back |
-| Move through tabs | **Tab / Shift+Tab**, or click and drag the strip sideways (the mouse wheel works too) |
+| Move through tabs | **Tab / Shift+Tab** (Original Siri), or click and drag the strip sideways (the mouse wheel works too) |
 
 ---
 
@@ -215,7 +220,8 @@ All options are in the **⋯** settings panel (in seven languages) and in the mo
 | ④ Window and Fullscreen | Window size, search style (top bar or centered box), power button and its position, opening and closing animations (pop, fade, rise from/sink into the taskbar, CRT), animation speed, blur behind open folders |
 | ⑤ Floating and Original Siri | Bar size (96 px tall by default), results box width and rows for each category (Files and Clipboard as wide as the bar by default), circle animation (Siri wave, soft glow, none), circle zoom, bounce of the circle and of the results box, opening/closing duration, animation speed, search everything when typing, power options when typing, floating power button (off by default) and its side (left or right of the bar), first row (recent, most used, off), Original Siri category shortcuts for Applications, Files, Actions, Clipboard and Phone (defaults **Ctrl+1**, **Ctrl+2**, **Ctrl+3**, **Ctrl+4**, **Ctrl+5**; any combination starting with Ctrl, e.g. Ctrl+Shift+F or Ctrl+F2), and whether they also work with the launcher closed (off by default) |
 | ⑥ Opening | Open with the Windows key and/or the Start button |
-| ⑦ Apps and icons | Icon size, columns, scrolling direction, jiggle, drag to the taskbar to pin, icon gallery folder |
+| ⑦ Apps and icons | Icon size, text size of the results (80 to 160 %), columns, scrolling direction, jiggle, drag to the taskbar to pin, icon gallery folder |
+| Search | Ignore accents (on by default), calculator |
 | ⑧ Files | On/off, search history, list or icons, indexer, maximum results |
 | ⑨ Clipboard | On/off, number of items kept, how long a copy stays |
 | ⑩ Phone | On/off (off by default), notifications shown (1 to 10) |
@@ -234,7 +240,7 @@ All options are in the **⋯** settings panel (in seven languages) and in the mo
 | Other **Ctrl+digits** | Launch the matching result (never an action such as Shut down) |
 | **Esc** | Closes menus, then clears the search, goes back to the categories and finally closes |
 | Right-click on the search bar | Cut, Copy, Paste, Select all, Delete all |
-| Long-press an app | Select it; then a simple click selects or deselects more apps (Window/Fullscreen: right-click → **New folder with N items** puts them in a folder; Original Siri: inside the app picker) |
+| Long-press an app | Select it; then a simple click selects or deselects more apps (Window/Fullscreen: right-click → **New folder with N items** puts them in a folder; Floating: right-click → **Pin selected to taskbar**; Original Siri: inside the app picker) |
 
 ---
 
