@@ -6,7 +6,7 @@ Um mod do [Windhawk](https://windhawk.net) que substitui o menu Iniciar do Windo
 
 Aperte a **tecla Windows** (ou clique em **Iniciar**) e digite, ou escolha o que quer pesquisar no menu que desce da barra.
 
-![Modo Siri original](screenshots/siri-plus-launchpad-1.3.webp)
+![Modo Siri original](screenshots/siri-plus-launchpad-1.3.0.webp)
 
 ---
 

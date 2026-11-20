@@ -6,7 +6,7 @@ A [Windhawk](https://windhawk.net) mod that replaces the Windows 11 Start menu w
 
 Press the **Windows key** (or click **Start**) and type, or pick what you want to search from the menu that drops down from the bar.
 
-![Original Siri mode](screenshots/siri-plus-launchpad-1.3.webp)
+![Original Siri mode](screenshots/siri-plus-launchpad-1.3.0.webp)
 
 ---
 
